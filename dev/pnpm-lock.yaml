@@ -21,8 +21,8 @@ dependencies:
     specifier: ^2.11.2
     version: 2.11.2(typescript@5.4.3)(webpack@5.91.0)
   payload-bidirectional-relationships-plugin:
-    specifier: ^0.1.0-v2
-    version: 0.1.0-v3(@swc/core@1.4.8)(@swc/types@0.1.6)
+    specifier: 0.1.1-v2
+    version: 0.1.1-v2(typescript@5.4.3)(webpack@5.91.0)
 
 devDependencies:
   '@types/express':
@@ -1722,10 +1722,6 @@ packages:
       - yjs
     dev: false
 
-  /@payloadcms/translations@3.0.0-alpha.48:
-    resolution: {integrity: sha512-ncBR724ZtXbrmUhgwusgLeulvaT+e/8LrMnTGed22P0VK3M+vE/ghimqcdZ4M6kHTsJTigFV4hG1Wkt9SBH70Q==}
-    dev: false
-
   /@polka/url@1.0.0-next.25:
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
     dev: false
@@ -2204,24 +2200,6 @@ packages:
       tslib: 2.6.2
     dev: false
     optional: true
-
-  /@swc-node/core@1.13.0(@swc/core@1.4.8)(@swc/types@0.1.6):
-    resolution: {integrity: sha512-lFPD4nmy4ifAOVMChFjwlpXN5KQXvegqeyuzz1KQz42q1lf+cL3Qux1/GteGuZjh8HC+Rj1RdNrHpE/MCfJSTw==}
-    engines: {node: '>= 10'}
-    peerDependencies:
-      '@swc/core': '>= 1.3'
-      '@swc/types': '>= 0.1'
-    dependencies:
-      '@swc/core': 1.4.8
-      '@swc/types': 0.1.6
-    dev: false
-
-  /@swc-node/sourcemap-support@0.5.0:
-    resolution: {integrity: sha512-fbhjL5G0YvFoWwNhWleuBUfotiX+USiA9oJqu9STFw+Hb0Cgnddn+HVS/K5fI45mn92e8V+cHD2jgFjk4w2T9Q==}
-    dependencies:
-      source-map-support: 0.5.21
-      tslib: 2.6.2
-    dev: false
 
   /@swc/core-darwin-arm64@1.3.107:
     resolution: {integrity: sha512-47tD/5vSXWxPd0j/ZllyQUg4bqalbQTsmqSw0J4dDdS82MWqCAwUErUrAZPRjBkjNQ6Kmrf5rpCWaGTtPw+ngw==}
@@ -4511,12 +4489,6 @@ packages:
       resolve-pkg-maps: 1.0.0
     dev: false
 
-  /get-tsconfig@4.7.3:
-    resolution: {integrity: sha512-ZvkrzoUA0PQZM6fy6+/Hce561s+faD1rsNwhnO5FelNjyy7EMGJ3Rz1AQ8GYDWjhRs/7dBLOEJvhK8MiEJOAFg==}
-    dependencies:
-      resolve-pkg-maps: 1.0.0
-    dev: false
-
   /github-from-package@0.0.0:
     resolution: {integrity: sha512-SyHy3T1v2NUXn29OsWdxmK6RwHD+vkj3v8en8AOBZ1wBQ/hCAQ5bAQTD02kW4W9tUp/3Qh6J8r9EvntiyCmOOw==}
     dev: false
@@ -4857,14 +4829,6 @@ packages:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: false
 
-  /image-size@1.1.1:
-    resolution: {integrity: sha512-541xKlUw6jr/6gGuk92F+mYM5zaFAc5ahphvkqvNe2bQ6gVBkd6bfrmVJ2t4KDAfikAYZyIqTnktX3i6/aQDrQ==}
-    engines: {node: '>=16.x'}
-    hasBin: true
-    dependencies:
-      queue: 6.0.2
-    dev: false
-
   /immutable@4.3.5:
     resolution: {integrity: sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw==}
     dev: false
@@ -5153,16 +5117,6 @@ packages:
       jest-util: 29.7.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
-    dev: false
-
-  /joi@17.12.2:
-    resolution: {integrity: sha512-RonXAIzCiHLc8ss3Ibuz45u28GOsWE1UpfDXLbN/9NKbL4tCJf8TWYVKsoYuuh+sAUt7fsSNpA+r2+TBA6Wjmw==}
-    dependencies:
-      '@hapi/hoek': 9.3.0
-      '@hapi/topo': 5.1.0
-      '@sideway/address': 4.1.5
-      '@sideway/formula': 3.0.1
-      '@sideway/pinpoint': 2.0.0
     dev: false
 
   /joi@17.9.2:
@@ -5715,11 +5669,6 @@ packages:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
     dev: false
 
-  /nodemailer@6.9.10:
-    resolution: {integrity: sha512-qtoKfGFhvIFW5kLfrkw2R6Nm6Ur4LNUMykyqu6n9BRKJuyQrqEGwdXXUAbwWEKt33dlWUGXb7rzmJP/p4+O+CA==}
-    engines: {node: '>=6.0.0'}
-    dev: false
-
   /nodemailer@6.9.8:
     resolution: {integrity: sha512-cfrYUk16e67Ks051i4CntM9kshRYei1/o/Gi8K1d+R34OIs21xdFnW7Pt7EucmVKA0LKtqUGNcjMZ7ehjl49mQ==}
     engines: {node: '>=6.0.0'}
@@ -5964,14 +5913,21 @@ packages:
     resolution: {integrity: sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==}
     dev: false
 
-  /payload-bidirectional-relationships-plugin@0.1.0-v3(@swc/core@1.4.8)(@swc/types@0.1.6):
-    resolution: {integrity: sha512-CQyHibo5i/eob+OWwtbbiaRbXvPX754/GqJ8X8pUrmyODtfkU1zUOrTLXtISy5LfL9v+2pcdteOcc8qp8ywlYQ==}
+  /payload-bidirectional-relationships-plugin@0.1.1-v2(typescript@5.4.3)(webpack@5.91.0):
+    resolution: {integrity: sha512-WV8PB1cNcHT/NAJxuo0iNv6+LZl/Q02URfIKzYKEFGpS9qM9XqG4yFRkDbUAUp/1EN54TIzHd3OkrDs1zAjAqg==}
     engines: {node: ^21.7.1}
     dependencies:
-      payload: 3.0.0-alpha.48(@swc/core@1.4.8)(@swc/types@0.1.6)
+      payload: 2.11.2(typescript@5.4.3)(webpack@5.91.0)
     transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/types'
+      - '@swc/helpers'
+      - '@types/react'
+      - encoding
+      - esbuild
+      - react-native
+      - supports-color
+      - typescript
+      - uglify-js
+      - webpack
     dev: false
 
   /payload@2.11.2(typescript@5.4.3)(webpack@5.91.0):
@@ -6077,44 +6033,6 @@ packages:
       - typescript
       - uglify-js
       - webpack
-    dev: false
-
-  /payload@3.0.0-alpha.48(@swc/core@1.4.8)(@swc/types@0.1.6):
-    resolution: {integrity: sha512-+wVkk0AW9E0SoSYKvsxrkDikASXHYgUN+sCq/9cqyeEaGGeD3IDOE5Y0yWYVkYXtMKERFsSt7PRhiXPo/SqbNg==}
-    engines: {node: '>=18.17.0'}
-    hasBin: true
-    dependencies:
-      '@payloadcms/translations': 3.0.0-alpha.48
-      '@swc-node/core': 1.13.0(@swc/core@1.4.8)(@swc/types@0.1.6)
-      '@swc-node/sourcemap-support': 0.5.0
-      bson-objectid: 2.0.4
-      conf: 10.2.0
-      console-table-printer: 2.11.2
-      dataloader: 2.2.2
-      deepmerge: 4.3.1
-      dotenv: 8.6.0
-      file-type: 16.5.4
-      find-up: 4.1.0
-      get-tsconfig: 4.7.3
-      http-status: 1.6.2
-      image-size: 1.1.1
-      joi: 17.12.2
-      json-schema-to-typescript: 11.0.3
-      jsonwebtoken: 9.0.1
-      minimist: 1.2.8
-      mkdirp: 1.0.4
-      monaco-editor: 0.38.0
-      nodemailer: 6.9.10
-      pino: 8.15.0
-      pino-pretty: 10.2.0
-      pirates: 4.0.6
-      pluralize: 8.0.0
-      sanitize-filename: 1.6.3
-      scheduler: 0.23.0
-      scmp: 2.1.0
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/types'
     dev: false
 
   /peek-readable@4.1.0:
@@ -7040,12 +6958,6 @@ packages:
   /queue-tick@1.0.1:
     resolution: {integrity: sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag==}
     requiresBuild: true
-    dev: false
-
-  /queue@6.0.2:
-    resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
-    dependencies:
-      inherits: 2.0.4
     dev: false
 
   /quick-format-unescaped@4.0.4:
