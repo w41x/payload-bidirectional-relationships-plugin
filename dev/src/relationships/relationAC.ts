@@ -1,4 +1,4 @@
-import {biDirectionalRelationship} from 'payloadcms-bidirectional-relationships-plugin'
+import {biDirectionalRelationship} from 'payload-bidirectional-relationships-plugin'
 
 export const relationAC = biDirectionalRelationship({
     vertexA: {

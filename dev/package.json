@@ -42,13 +42,13 @@
     "generate:types": "payload generate:types"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.48",
-    "@payloadcms/next": "3.0.0-alpha.48",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.48",
-    "@payloadcms/ui": "3.0.0-alpha.48",
-    "payloadcms-bidirectional-relationships-plugin": "0.1.2",
-    "next": "14.2.0-canary.30",
-    "payload": "3.0.0-alpha.48",
+    "@payloadcms/db-mongodb": "^3.0.0-alpha.48",
+    "@payloadcms/next": "^3.0.0-alpha.48",
+    "@payloadcms/richtext-lexical": "^3.0.0-alpha.48",
+    "@payloadcms/ui": "^3.0.0-alpha.48",
+    "payload-bidirectional-relationships-plugin": "0.1.0-v3",
+    "next": "^14.2.0-canary.33",
+    "payload": "^3.0.0-alpha.48",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

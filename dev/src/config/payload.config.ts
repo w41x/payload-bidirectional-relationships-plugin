@@ -6,7 +6,7 @@ import {mongooseAdapter} from '@payloadcms/db-mongodb'
 import {lexicalEditor} from '@payloadcms/richtext-lexical'
 
 import {collections} from '@/collections'
-import {biDirectionalRelationships} from 'payloadcms-bidirectional-relationships-plugin'
+import {biDirectionalRelationships} from 'payload-bidirectional-relationships-plugin'
 import {relationAB, relationAC} from '@/relationships'
 
 const devAccount = {
