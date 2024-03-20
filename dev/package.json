@@ -1,0 +1,72 @@
+{
+  "name": "payload-bidirectional-relationships-plugin-dev",
+  "version": "0.1.0-v3",
+  "description": "development environment for payload-bidirectional-relationships-plugin",
+  "license": "MIT",
+  "author": {
+    "name": "WALX Tech e.K.",
+    "email": "x@walx.tech",
+    "url": "https://walx.tech"
+  },
+  "contributors": [
+    {
+      "name": "Ш41%",
+      "email": "_@w41x.io",
+      "url": "https://w41x.io"
+    }
+  ],
+  "homepage": "https://github.com/w41x/payload-bidirectional-relationships-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w41x/payload-bidirectional-relationships-plugin.git"
+  },
+  "keywords": [
+    "payload",
+    "cms",
+    "plugin",
+    "bidirectional",
+    "relationships"
+  ],
+  "bugs": {
+    "url": "https://github.com/w41x/payload-bidirectional-relationships-plugin/issues"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": [
+    "dist",
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "dev": "next dev --turbo",
+    "generate:types": "payload generate:types"
+  },
+  "dependencies": {
+    "@payloadcms/db-mongodb": "3.0.0-alpha.48",
+    "@payloadcms/next": "3.0.0-alpha.48",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.48",
+    "@payloadcms/ui": "3.0.0-alpha.48",
+    "payloadcms-bidirectional-relationships-plugin": "0.1.2",
+    "next": "14.2.0-canary.30",
+    "payload": "3.0.0-alpha.48",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.29",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.3",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  },
+  "engines": {
+    "node": "^21.7.1"
+  },
+  "packageManager": "pnpm@8.15.5",
+  "private": true,
+  "type": "module"
+}
+

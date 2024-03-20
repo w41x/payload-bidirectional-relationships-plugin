@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+
+  #api development build
+  payload:
+    build:
+      target: payload
+    image: payload:dev
+    ports:
+      - target: 3000
+        published: 80
+        protocol: tcp
+        mode: host
+    depends_on:
+      - db
+    restart: unless-stopped
+    #enabling hot reload by binding the project folder
+    volumes:
+      - type: bind
+        source: ./
+        target: /home/node/workspace
+
+
+  #db development build
+  db:
+    build:
+      target: db
+    image: db:dev
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: data
+        target: /data/db
+
+networks:
+  default:
+    name: workspace-dev
+
+volumes:
+  data:
+    name: workspace-vol-data

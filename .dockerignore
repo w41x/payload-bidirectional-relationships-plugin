@@ -1,0 +1,15 @@
+.github
+.idea
+.turbo
+node_modules
+dist
+
+.gitignore
+
+docker-compose.yml
+Dockerfile
+Makefile
+
+README.md
+
+tsconfig.tsbuildinfo
