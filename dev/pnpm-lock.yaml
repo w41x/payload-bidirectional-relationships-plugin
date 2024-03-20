@@ -24,8 +24,8 @@ dependencies:
     specifier: ^3.0.0-alpha.48
     version: 3.0.0-alpha.48(@swc/core@1.4.8)(@swc/types@0.1.6)
   payload-bidirectional-relationships-plugin:
-    specifier: 0.1.0-v3
-    version: 0.1.0-v3(@swc/core@1.4.8)(@swc/types@0.1.6)
+    specifier: 0.1.1-v3
+    version: 0.1.1-v3(@swc/core@1.4.8)(@swc/types@0.1.6)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -5202,8 +5202,8 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
 
-  /payload-bidirectional-relationships-plugin@0.1.0-v3(@swc/core@1.4.8)(@swc/types@0.1.6):
-    resolution: {integrity: sha512-CQyHibo5i/eob+OWwtbbiaRbXvPX754/GqJ8X8pUrmyODtfkU1zUOrTLXtISy5LfL9v+2pcdteOcc8qp8ywlYQ==}
+  /payload-bidirectional-relationships-plugin@0.1.1-v3(@swc/core@1.4.8)(@swc/types@0.1.6):
+    resolution: {integrity: sha512-Gain3knI2smVXjIb8LgEb6jCSG3awQ2tNJ5OnLSC0ikgLUWF2806+5MrkvkgCvw0ZERy/4g/1loik3IsgfgK8Q==}
     engines: {node: ^21.7.1}
     dependencies:
       payload: 3.0.0-alpha.48(@swc/core@1.4.8)(@swc/types@0.1.6)
