@@ -1,0 +1,61 @@
+{
+  "name": "payload-bidirectional-relationships-plugin-dev",
+  "version": "0.1.0-v2",
+  "description": "development environment for payload-bidirectional-relationships-plugin",
+  "license": "MIT",
+  "author": {
+    "name": "WALX Tech e.K.",
+    "email": "x@walx.tech",
+    "url": "https://walx.tech"
+  },
+  "contributors": [
+    {
+      "name": "Ш41%",
+      "email": "_@w41x.io",
+      "url": "https://w41x.io"
+    }
+  ],
+  "homepage": "https://github.com/w41x/payload-bidirectional-relationships-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w41x/payload-bidirectional-relationships-plugin.git"
+  },
+  "keywords": [
+    "payload",
+    "cms",
+    "plugin",
+    "bidirectional",
+    "relationships"
+  ],
+  "bugs": {
+    "url": "https://github.com/w41x/payload-bidirectional-relationships-plugin/issues"
+  },
+  "main": "./src/main.ts",
+  "types": "./src/main.ts",
+  "scripts": {
+    "dev": "tsnd src/main.ts",
+    "generate:types": "payload generate:types"
+  },
+  "dependencies": {
+    "@payloadcms/bundler-webpack": "^1.0.6",
+    "@payloadcms/db-mongodb": "^1.4.3",
+    "@payloadcms/richtext-lexical": "^0.7.0",
+    "payload-bidirectional-relationships-plugin": "^0.1.0-v2",
+    "express": "^4.19.0",
+    "payload": "^2.11.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.3"
+  },
+  "engines": {
+    "node": "^21.7.1"
+  },
+  "packageManager": "pnpm@8.15.5",
+  "private": true,
+  "type": "module"
+}
+

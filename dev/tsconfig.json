@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "plugin-dev-tsconfig",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react",
+    "paths": {
+      "payload/generated-types": [
+        "config/payload-types.ts"
+      ]
+    },
+    "target": "ES5"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "Node",
+      "target": "ES2022"
+    }
+  }
+}
