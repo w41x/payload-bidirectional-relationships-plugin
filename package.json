@@ -1,6 +1,6 @@
 {
   "name": "payload-bidirectional-relationships-plugin",
-  "version": "0.1.1-v2",
+  "version": "0.1.2-v2",
   "description": "plugin for Payload CMS, which enables bidirectional relationships",
   "license": "MIT",
   "author": {
