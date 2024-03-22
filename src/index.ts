@@ -1,10 +1,10 @@
 import {GeneratedTypes} from 'payload'
-import {BiDirectionalRelationship, RelationConfig} from './types.js'
-import {relationList} from './field.js'
-import {extractDirectedRelation} from './helpers.js'
-import {afterDocumentDelete} from './hooks.js'
-import {CollectionAfterDeleteHook} from 'payload/types.js'
-import {Config} from 'payload/config.js'
+import {BiDirectionalRelationship, RelationConfig} from './types'
+import {relationList} from './field'
+import {extractDirectedRelation} from './helpers'
+import {afterDocumentDelete} from './hooks'
+import {CollectionAfterDeleteHook} from 'payload/types'
+import {Config} from 'payload/config'
 
 export const biDirectionalRelationship = <G extends GeneratedTypes, Config extends RelationConfig<G>>(config: Config): BiDirectionalRelationship<G, Config> => {
     const {here, there} = extractDirectedRelation(config, 'A->B')

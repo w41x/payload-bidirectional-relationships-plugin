@@ -1,12 +1,12 @@
 import {GeneratedTypes, RequestContext} from 'payload'
-import {PayloadRequest} from 'payload/types.js'
+import {PayloadRequest} from 'payload/types'
 import {
     DirectedRelation,
     RelatableCollection,
     RelationConfig, RelationDirection,
     RelationList,
     RelationValue
-} from './types.js'
+} from './types'
 
 export const extractDirectedRelation = <G extends GeneratedTypes, Config extends RelationConfig<G>, Arrow extends RelationDirection>(config: RelationConfig<G>, direction: Arrow): DirectedRelation<G, Config, Arrow> => {
     const split = {

@@ -1,8 +1,8 @@
 'use server'
 import {GeneratedTypes} from 'payload'
-import {FilterOptions} from 'payload/types.js'
-import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection} from './types.js'
-import {extractDirectedRelation, getId, getList} from './helpers.js'
+import {FilterOptions} from 'payload/types'
+import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection} from './types'
+import {extractDirectedRelation, getId, getList} from './helpers'
 
 export const filterFieldOptions = <G extends GeneratedTypes, Config extends RelationConfig<G>, Arrow extends RelationDirection>(config: Config, direction: Arrow): FilterOptions<RelatableCollection<G>[DirectedRelation<G, Config, Arrow>['here']['collection']]> => async ({data}) => ({
     id: {

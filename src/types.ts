@@ -1,5 +1,5 @@
 import {GeneratedTypes} from 'payload'
-import {ArrayField, CollectionAfterDeleteHook, Field, SingleRelationshipField, TypeWithID} from 'payload/types.js'
+import {ArrayField, CollectionAfterDeleteHook, Field, SingleRelationshipField, TypeWithID} from 'payload/types'
 
 export type valueOf<Type> = Type[keyof Type]
 

@@ -1,7 +1,7 @@
 import {GeneratedTypes} from 'payload'
-import {CollectionAfterDeleteHook, FieldHook, TypeWithID} from 'payload/types.js'
-import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection, RelationList} from './types.js'
-import {couple, deepComparison, extractDirectedRelation, getId, getList} from './helpers.js'
+import {CollectionAfterDeleteHook, FieldHook, TypeWithID} from 'payload/types'
+import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection, RelationList} from './types'
+import {couple, deepComparison, extractDirectedRelation, getId, getList} from './helpers'
 
 export const afterListChange = <G extends GeneratedTypes, Config extends RelationConfig<G>, Arrow extends RelationDirection>(config: Config, direction: Arrow): FieldHook<RelatableCollection<G>[DirectedRelation<G, Config, Arrow>['here']['collection']] & TypeWithID, RelationList | null> => async ({
                                                                                                                                                                                                                                                                                                             originalDoc,

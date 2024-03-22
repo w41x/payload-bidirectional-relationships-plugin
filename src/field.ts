@@ -1,10 +1,10 @@
 import {GeneratedTypes} from 'payload'
-import {ArrayField} from 'payload/types.js'
-import {RelationConfig, RelationDirection} from './types.js'
-import {extractDirectedRelation} from './helpers.js'
-import {filterFieldOptions} from './filter.js'
-import {validateField} from './validate.js'
-import {afterListChange} from './hooks.js'
+import {ArrayField} from 'payload/types'
+import {RelationConfig, RelationDirection} from './types'
+import {extractDirectedRelation} from './helpers'
+import {filterFieldOptions} from './filter'
+import {validateField} from './validate'
+import {afterListChange} from './hooks'
 
 export const relationList = <G extends GeneratedTypes, Config extends RelationConfig<G>>(config: Config, direction: RelationDirection): ArrayField => {
     const {here, there} = extractDirectedRelation<G, Config, typeof direction>(config, direction)

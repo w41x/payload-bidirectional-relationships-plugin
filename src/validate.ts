@@ -1,13 +1,13 @@
 import {GeneratedTypes} from 'payload'
-import {Validate} from 'payload/types.js'
+import {Validate} from 'payload/types'
 import {
     DirectedRelation,
     RelatableCollection,
     RelationConfig,
     RelationDirection,
     RelationValue
-} from './types.js'
-import {extractDirectedRelation, getId, getList} from './helpers.js'
+} from './types'
+import {extractDirectedRelation, getId, getList} from './helpers'
 
 export const validateField = <G extends GeneratedTypes, Config extends RelationConfig<G>, Arrow extends RelationDirection>(config: Config, direction: Arrow): Validate<RelationValue<G, DirectedRelation<G, Config, Arrow>['there']['collection']>, RelatableCollection<G>[DirectedRelation<G, Config, Arrow>['here']['collection']]> => (val, {
     data,
