@@ -2,7 +2,6 @@
   "name": "payload-bidirectional-relationships-plugin",
   "version": "0.1.1-v2",
   "description": "plugin for Payload CMS, which enables bidirectional relationships",
-  "type": "module",
   "license": "MIT",
   "author": {
     "name": "WALX Tech e.K.",

@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/swcrc",
   "sourceMaps": true,
   "jsc": {
-    "target": "esnext",
+    "target": "es5",
     "parser": {
       "syntax": "typescript",
       "tsx": true,
