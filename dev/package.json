@@ -42,25 +42,25 @@
     "generate:types": "payload generate:types"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "^3.0.0-alpha.48",
-    "@payloadcms/next": "^3.0.0-alpha.48",
-    "@payloadcms/richtext-lexical": "^3.0.0-alpha.48",
-    "@payloadcms/ui": "^3.0.0-alpha.48",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.49",
+    "@payloadcms/next": "3.0.0-alpha.49",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.49",
+    "@payloadcms/ui": "3.0.0-alpha.49",
     "payload-bidirectional-relationships-plugin": "0.1.1-v3",
-    "next": "^14.2.0-canary.33",
-    "payload": "^3.0.0-alpha.48",
+    "next": "14.2.0-canary.23",
+    "payload": "^3.0.0-alpha.49",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.29",
-    "@types/react": "^18.2.67",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.69",
     "@types/react-dom": "^18.2.22",
-    "autoprefixer": "^10.4.18",
+    "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
-    "eslint-config-next": "14.1.3",
+    "eslint-config-next": "14.1.4",
     "tsx": "^4.7.1",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "engines": {
     "node": "^21.7.1"
