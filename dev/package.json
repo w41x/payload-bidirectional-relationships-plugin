@@ -1,9 +1,8 @@
 {
   "name": "payload-bidirectional-relationships-plugin-dev",
-  "version": "0.1.4-v2",
+  "version": "0.2.0-v2",
   "description": "development environment for payload-bidirectional-relationships-plugin",
   "license": "MIT",
-  "type": "module",
   "author": {
     "name": "WALX Tech e.K.",
     "email": "x@walx.tech",
@@ -41,7 +40,7 @@
     "@payloadcms/bundler-webpack": "^1.0.6",
     "@payloadcms/db-mongodb": "^1.4.3",
     "@payloadcms/richtext-lexical": "^0.7.0",
-    "payload-bidirectional-relationships-plugin": "0.1.4-v2",
+    "payload-bidirectional-relationships-plugin": "file:..",
     "express": "^4.19.0",
     "payload": "^2.11.2"
   },

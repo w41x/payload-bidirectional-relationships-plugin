@@ -5,22 +5,19 @@ LABEL name='api build'
 # enable pnpm
 RUN corepack enable
 RUN corepack prepare pnpm@8.15.5 --activate
-# set user and working directory and copy all project files
+# set user and working directory and copy all relevant project files
 USER node
 WORKDIR /home/node/workspace
-COPY --chown=node . .
+COPY --chown=node package.json .
+COPY --chown=node dist dist
+COPY --chown=node dev dev
+WORKDIR /home/node/workspace/dev
+# install node modules for plugin
+RUN pnpm install --force
+ENV PATH /home/node/workspace/dev/node_modules/.bin:$PATH
 # set environment variables
 ENV NODE_ENV development
-# install node modules for plugin
-# RUN pnpm install
-# ENV PATH  /home/node/workspace/node_modules/.bin:$PATH
-# build plugin
-# RUN pnpm run build
-# set working directory for test environment
-WORKDIR /home/node/workspace/dev
-# install node module for test environment
-RUN pnpm install
-ENV PATH  /home/node/workspace/dev/node_modules/.bin:$PATH
+ENV PAYLOAD_CONFIG_PATH src/config/payload.config.ts
 # set internal port
 EXPOSE 3000
 # start test environment

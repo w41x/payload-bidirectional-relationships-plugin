@@ -1,15 +1,14 @@
 .github
-.idea
-.turbo
+
 node_modules
-dist
 
 .gitignore
 
 docker-compose.yml
 Dockerfile
+
 Makefile
 
-README.md
+pnpm-lock.yaml
 
-tsconfig.tsbuildinfo
+README.md

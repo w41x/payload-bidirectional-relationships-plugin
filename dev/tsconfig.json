@@ -2,25 +2,24 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "plugin-dev-tsconfig",
   "compilerOptions": {
-    "baseUrl": "src",
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "allowJs": true,
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "jsx": "react",
     "paths": {
       "payload/generated-types": [
-        "config/payload-types.ts"
+        "./src/config/payload-types.ts"
       ]
-    },
-    "target": "ES5"
+    }
   },
   "include": [
     "src"

@@ -1,9 +1,8 @@
 {
   "name": "payload-bidirectional-relationships-plugin",
-  "version": "0.1.4-v2",
+  "version": "0.2.0-v2",
   "description": "plugin for Payload CMS, which enables bidirectional relationships",
   "license": "MIT",
-  "type": "module",
   "author": {
     "name": "WALX Tech e.K.",
     "email": "x@walx.tech",
@@ -37,22 +36,15 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm build:swc && pnpm build:types",
-    "build:swc": "swc src -d dist --config-file .swcrc --strip-leading-paths",
-    "build:types": "tsc --emitDeclarationOnly --outDir dist",
-    "clean": "rimraf {dist, tsconfig.tsbuildinfo}",
-    "prepublishOnly": "pnpm clean && pnpm turbo build"
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "build": "tsc",
+    "prepublishOnly": "pnpm clean && pnpm build"
   },
   "dependencies": {
     "payload": "^2.11.2"
   },
   "devDependencies": {
-    "@swc/cli": "^0.3.10",
-    "@swc/core": "^1.4.8",
-    "@types/node": "^20.11.30",
     "rimraf": "^5.0.5",
-    "tsx": "^4.7.1",
-    "turbo": "^1.13.0",
     "typescript": "^5.4.3"
   },
   "engines": {
@@ -61,14 +53,14 @@
   "packageManager": "pnpm@8.15.5",
   "exports": {
     ".": {
-      "import": "./src/index.ts",
-      "require": "./src/index.ts",
-      "types": "./src/index.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.js"
     },
     "./types": {
-      "import": "./src/types.ts",
-      "require": "./src/types.ts",
-      "types": "./src/types.ts"
+      "import": "./dist/types.js",
+      "require": "./dist/types.js",
+      "types": "./dist/types.js"
     }
   },
   "publishConfig": {

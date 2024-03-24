@@ -15,11 +15,14 @@ services:
     depends_on:
       - db
     restart: unless-stopped
-    #enabling hot reload by binding the project folder
+    #enabling hot reload by binding the projects src & dist files
     volumes:
       - type: bind
-        source: ./
-        target: /home/node/workspace
+        source: ./dev/src
+        target: /home/node/workspace/dev/src
+      - type: bind
+        source: ./dist
+        target: /home/node/workspace/dist
 
 
   #db development build

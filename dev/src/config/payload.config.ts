@@ -1,6 +1,7 @@
 import {buildConfig} from 'payload/config'
 import path from 'path'
 
+import {webpackBundler} from '@payloadcms/bundler-webpack'
 import {mongooseAdapter} from '@payloadcms/db-mongodb'
 import {lexicalEditor} from '@payloadcms/richtext-lexical'
 
@@ -20,7 +21,8 @@ export default buildConfig({
         autoLogin: {
             ...devAccount,
             prefillOnly: true,
-        }
+        },
+        bundler: webpackBundler()
     },
     db: mongooseAdapter({url: 'mongodb://root:secret@db:27017'}),
     editor: lexicalEditor({}),
