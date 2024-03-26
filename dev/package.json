@@ -1,6 +1,6 @@
 {
   "name": "payload-bidirectional-relationships-plugin-dev",
-  "version": "0.2.0-v2",
+  "version": "0.3.0-v2",
   "description": "development environment for payload-bidirectional-relationships-plugin",
   "license": "MIT",
   "author": {
@@ -41,7 +41,7 @@
     "@payloadcms/db-mongodb": "^1.4.3",
     "@payloadcms/richtext-lexical": "^0.7.0",
     "payload-bidirectional-relationships-plugin": "file:..",
-    "express": "^4.19.0",
+    "express": "^4.19.2",
     "payload": "^2.11.2"
   },
   "devDependencies": {
