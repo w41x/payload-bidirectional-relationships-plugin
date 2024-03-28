@@ -6,7 +6,7 @@ works with PayloadCMS v2 and v3
 
 > [!NOTE]
 > 
-> *** You are currently in the v3 branch! ***
+> You are currently in the v3 branch!
 
 ## What this is for
 
