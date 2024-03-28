@@ -8,6 +8,10 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 >
 > You are currently in the v2 branch!
 
+[Go to main branch](https://github.com/w41x/payload-bidirectional-relationships-plugin)
+
+[Go to v3 branch](https://github.com/w41x/payload-bidirectional-relationships-plugin/tree/v3)
+
 ## What this is for
 
 - You have collections that are referencing each other in a bidirectional MxN way.
