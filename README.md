@@ -8,9 +8,9 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 >
 > You are currently in the main branch!
 
-[Go to v2 branch]([https://payloadcms.com](https://github.com/w41x/payload-bidirectional-relationships-plugin/tree/v2))
+[Go to v2 branch](https://github.com/w41x/payload-bidirectional-relationships-plugin/tree/v2)
 
-[Go to v3 branch]([https://payloadcms.com](https://github.com/w41x/payload-bidirectional-relationships-plugin/tree/v2))
+[Go to v3 branch](https://github.com/w41x/payload-bidirectional-relationships-plugin/tree/v2)
 
 ## What this is for
 
