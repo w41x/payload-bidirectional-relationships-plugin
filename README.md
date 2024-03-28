@@ -5,7 +5,7 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 works with PayloadCMS v2 and v3
 
 > [!NOTE]
-> 
+>
 > You are currently in the v3 branch!
 
 ## What this is for
@@ -36,20 +36,22 @@ works with PayloadCMS v2 and v3
 
 ## Install
 
-`pnpm add payload-bidirectional-relationships-plugin@0.3.0-v3`
+```shell
+pnpm add payload-bidirectional-relationships-plugin@0.3.0-v3
+```
 
 > [!WARNING]
 >
 > Be aware to install only that version of this plugin which is compatible
-with the PayloadCMS version you are using! So if you are using PayloadCMS v2, there should be a '-v2' at the end instead
-of a '-v3' and vice versa.
-In the future, when this plugin becomes stable, there will be 2.x.x and 3.x.x versions.
+> with the PayloadCMS version you are using! So if you are using PayloadCMS v2, there should be a '-v2' at the end instead
+> of a '-v3' and vice versa.
+> In the future, when this plugin becomes stable, there will be 2.x.x and 3.x.x versions.
 
 ## Usage
 
 ### define relationships
 
-```
+```ts
 import {biDirectionalRelationship} from 'payload-bidirectional-relationships-plugin'
 
 export const relationAB = biDirectionalRelationship({
@@ -96,7 +98,7 @@ export const relationAB = biDirectionalRelationship({
 
 ### add anchors to the collection configs at the desired place:
 
-```
+```ts
 import {CollectionConfig} from 'payload/types'
 import {relationAB} from './relationships'
 
@@ -139,15 +141,15 @@ export const CollectionB: CollectionConfig = {
 
 ### add hooks by using the plugin and referencing all relationships:
 
-```
+```ts
 import {buildConfig} from 'payload/config'
-import {relationAB, ...} from './relationships'
+import {relationAB, /*...*/} from './relationships'
 
 export default buildConfig({
-    ...,
+    //...,
     plugins: [
-        ...,
-        biDirectionalRelationships([relationAB, ...])
+        //...,
+        biDirectionalRelationships([relationAB /*, ...*/])
     ]
 })
 ```
