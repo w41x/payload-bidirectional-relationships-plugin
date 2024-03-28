@@ -34,9 +34,7 @@ export const getList = <G extends GeneratedTypes, Config extends RelationConfig<
     data[extractDirectedRelation<G, Config, Arrow>(config, direction).here.list] as RelationList
 
 const getRelationMeta = (entry: Record<string | number | symbol, any>, field: string | number | symbol) => {
-    const relationMeta = Object.assign({}, entry)
-    delete relationMeta[field]
-    delete relationMeta['id']
+    const {[field]: relationObject, id, ...relationMeta} = entry
     return relationMeta
 }
 
@@ -60,9 +58,8 @@ export const couple = async <G extends GeneratedTypes, Config extends RelationCo
                     }) as RelatableCollection<G>[typeof there.collection])[there.list] as RelationList
                     const matches = entriesThere.filter(entryThere => getId(entryThere[there.field]) == docHereId)
                     let updateNeeded = mode == 'decoupling' ? matches.length > 0 : (matches.length != 1 ? true : !deepComparison(relationMetaHere, getRelationMeta(matches[0], there.field)))
-                    const depth = (context.depth ?? 0) as number
-                    if (updateNeeded && depth < 1)
-                        await req.payload.update<any>({
+                    if (updateNeeded)
+                        await req.payload.update({
                             collection: there.collection,
                             id: docThereId,
                             data: {
@@ -76,14 +73,23 @@ export const couple = async <G extends GeneratedTypes, Config extends RelationCo
                             },
                             context: {
                                 ...context,
-                                depth: depth + 1
+                                updateCameFrom: docHereId
                             }
                         })
                 } catch (e) {
                     console.log(e)
+                } finally {
+                    console.log(`${mode} of ${here.collection}.${docHereId} and ${there.collection}.${docThereId}`)
                 }
             }
         }
+}
+
+export const entriesEqual = (entry1: Record<string, any>, entry2: Record<string, any>, field: string) => {
+    const {[field]: relationObject1, id: _, ...relationMeta1} = entry1
+    const {[field]: relationObject2, id: __, ...relationMeta2} = entry2
+
+    return getId(relationObject1) == getId(relationObject2) && deepComparison(relationMeta1, relationMeta2)
 }
 
 export const deepComparison = (object1: Record<string, any>, object2: Record<string, any>) => {

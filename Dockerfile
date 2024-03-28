@@ -20,6 +20,7 @@ ENV NODE_ENV development
 WORKDIR /home/node/workspace/dev
 # install node module for test environment
 RUN pnpm install
+ENV NEXT_TELEMETRY_DISABLED 1
 ENV PATH  /home/node/workspace/dev/node_modules/.bin:$PATH
 # set internal port
 EXPOSE 3000
