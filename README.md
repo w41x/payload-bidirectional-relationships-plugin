@@ -2,7 +2,7 @@
 
 plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional relationships
 
-works with PayloadCMS v2 and v3
+works with PayloadCMS v:two: and v:three: :100::fire:
 
 > [!NOTE]
 >
