@@ -12,7 +12,6 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 
 [Go to v2 branch](https://github.com/w41x/payload-bidirectional-relationships-plugin/tree/v2)
 
-
 ## What this is for
 
 - You have collections that are referencing each other in a bidirectional MxN way.
