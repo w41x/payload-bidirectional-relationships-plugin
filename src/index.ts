@@ -34,6 +34,7 @@ export const biDirectionalRelationships = <G extends GeneratedTypes>(relationshi
             }
         })),
         i18n: {
+            ...incomingConfig.i18n,
             translations: {
                 de: {
                     ...incomingConfig.i18n?.translations?.de ?? {},

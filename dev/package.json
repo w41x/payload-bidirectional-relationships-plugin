@@ -1,6 +1,6 @@
 {
   "name": "payload-bidirectional-relationships-plugin-dev",
-  "version": "0.3.0-v3",
+  "version": "0.4.0-v3",
   "description": "development environment for payload-bidirectional-relationships-plugin",
   "license": "MIT",
   "type": "module",
@@ -43,30 +43,30 @@
     "generate:types": "payload generate:types"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.49",
-    "@payloadcms/next": "3.0.0-alpha.49",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.49",
-    "@payloadcms/ui": "3.0.0-alpha.49",
+    "@payloadcms/db-mongodb": "3.0.0-beta.0",
+    "@payloadcms/next": "3.0.0-beta.0",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.0",
+    "@payloadcms/translations": "3.0.0-beta.0",
+    "@payloadcms/ui": "3.0.0-beta.0",
+    "next": "14.2.0-canary.23",
+    "payload": "3.0.0-beta.0",
     "payload-bidirectional-relationships-plugin": "file:..",
-    "next": "^14.2.0-canary.47",
-    "payload": "3.0.0-alpha.49",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30",
-    "@types/react": "^18.2.73",
-    "@types/react-dom": "^18.2.23",
-    "autoprefixer": "^10.4.19",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.75",
+    "@types/react-dom": "^18.2.24",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.4",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
   },
   "engines": {
-    "node": "^21.7.1"
+    "node": "^21.7.2"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.6",
   "private": true
 }
 

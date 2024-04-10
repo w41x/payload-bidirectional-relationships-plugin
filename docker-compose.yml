@@ -1,12 +1,10 @@
-version: '3.9'
-
 services:
 
   #api development build
   payload:
     build:
       target: payload
-    image: payload:dev
+    container_name: payload.dev
     ports:
       - target: 3000
         published: 80
@@ -26,7 +24,7 @@ services:
   db:
     build:
       target: db
-    image: db:dev
+    container_name: db.dev
     restart: unless-stopped
     volumes:
       - type: volume

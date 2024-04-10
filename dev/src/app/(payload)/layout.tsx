@@ -5,7 +5,6 @@ import configPromise from '@payload-config'
 import {RootLayout} from '@payloadcms/next/layouts'
 
 import '@payloadcms/next/css'
-import './custom.scss'
 
 const Layout = ({children}: PropsWithChildren) => <RootLayout config={configPromise}>{children}</RootLayout>
 

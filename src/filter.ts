@@ -1,4 +1,3 @@
-'use server'
 import {GeneratedTypes} from 'payload'
 import {FilterOptions} from 'payload/types'
 import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection} from './types.js'
