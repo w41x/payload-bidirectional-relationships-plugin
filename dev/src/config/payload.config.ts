@@ -13,8 +13,8 @@ import {de} from '@payloadcms/translations/languages/de'
 import {en} from '@payloadcms/translations/languages/en'
 
 const devAccount = {
-    email: "plugin@payload.cms",
-    password: "password",
+    email: 'plugin@payload.cms',
+    password: 'password',
 }
 
 export default buildConfig({
