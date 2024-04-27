@@ -1,14 +1,14 @@
 import {CollectionConfig} from 'payload/types'
-import {relationAC} from "@/relationships";
+import {relationAC} from '@/relationships'
 
 export const CollectionC: CollectionConfig = {
     slug: 'collectionC',
     labels: {
         singular: 'Document of Type C',
-        plural: 'Documents of Type C',
+        plural: 'Documents of Type C'
     },
     admin: {
-        useAsTitle: 'name',
+        useAsTitle: 'name'
     },
     fields: [
         {
@@ -16,5 +16,5 @@ export const CollectionC: CollectionConfig = {
             type: 'text'
         },
         relationAC.anchors.collectionC
-    ],
+    ]
 }

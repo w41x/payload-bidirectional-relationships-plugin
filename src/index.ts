@@ -12,11 +12,11 @@ export const biDirectionalRelationship = <G extends GeneratedTypes, Config exten
         config,
         anchors: {
             [here.collection]: relationList<G, Config>(config, 'A->B'),
-            [there.collection]: relationList<G, Config>(config, 'B->A'),
+            [there.collection]: relationList<G, Config>(config, 'B->A')
         } as BiDirectionalRelationship<G, Config>['anchors'],
         hooks: {
             [here.collection]: afterDocumentDelete<G, Config>(config, 'A->B'),
-            [there.collection]: afterDocumentDelete<G, Config>(config, 'B->A'),
+            [there.collection]: afterDocumentDelete<G, Config>(config, 'B->A')
         } as BiDirectionalRelationship<G, Config>['hooks']
     }
 }

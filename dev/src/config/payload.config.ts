@@ -14,14 +14,14 @@ import {en} from '@payloadcms/translations/languages/en'
 
 const devAccount = {
     email: 'plugin@payload.cms',
-    password: 'password',
+    password: 'password'
 }
 
 export default buildConfig({
     admin: {
         autoLogin: {
             ...devAccount,
-            prefillOnly: true,
+            prefillOnly: true
         }
     },
     collections,
@@ -33,14 +33,14 @@ export default buildConfig({
     async onInit(payload) {
         const existingUsers = await payload.find({
             collection: 'users',
-            limit: 1,
-        });
+            limit: 1
+        })
 
         if (existingUsers.docs.length === 0) {
             await payload.create({
                 collection: 'users',
-                data: devAccount,
-            });
+                data: devAccount
+            })
         }
     },
     plugins: [
@@ -49,6 +49,6 @@ export default buildConfig({
     secret: 'top-secret',
     telemetry: false,
     typescript: {
-        outputFile: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'payload-types.ts'),
-    },
+        outputFile: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'payload-types.ts')
+    }
 })

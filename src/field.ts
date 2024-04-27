@@ -24,7 +24,7 @@ export const relationList = <G extends GeneratedTypes, Config extends RelationCo
             ...config.relationMeta
         ],
         hooks: {
-            afterChange: [afterListChange<G, Config, typeof direction>(config, direction)],
+            afterChange: [afterListChange<G, Config, typeof direction>(config, direction)]
         }
     }
 }

@@ -1,21 +1,15 @@
 # syntax = docker/dockerfile:1.4.1
 
-FROM node:21.7.2-alpine3.19 AS payload
+FROM node:21.7.3-alpine3.19 AS payload
 LABEL name='api build'
-# enable pnpm
+# enable corepack
 RUN corepack enable
-RUN corepack prepare pnpm@8.15.6 --activate
 # set user and working directory and copy all project files
 USER node
 WORKDIR /home/node/workspace
 COPY --chown=node . .
 # set environment variables
 ENV NODE_ENV development
-# install node modules for plugin
-# RUN pnpm install
-# ENV PATH  /home/node/workspace/node_modules/.bin:$PATH
-# build plugin
-# RUN pnpm run build
 # set working directory for test environment
 WORKDIR /home/node/workspace/dev
 # install node module for test environment

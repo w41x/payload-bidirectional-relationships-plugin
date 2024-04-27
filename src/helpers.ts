@@ -93,8 +93,8 @@ export const entriesEqual = (entry1: Record<string, any>, entry2: Record<string,
 }
 
 export const deepComparison = (object1: Record<string, any>, object2: Record<string, any>) => {
-    const keys1 = Object.keys(object1);
-    const keys2 = Object.keys(object2);
+    const keys1 = Object.keys(object1)
+    const keys2 = Object.keys(object2)
 
     if (keys1.length !== keys2.length)
         return false

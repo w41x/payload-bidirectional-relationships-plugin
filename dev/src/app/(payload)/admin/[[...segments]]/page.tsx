@@ -2,7 +2,7 @@
 /* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
 
 import config from '@payload-config'
-import { RootPage } from '@payloadcms/next/views'
+import {RootPage} from '@payloadcms/next/views'
 
 type Args = {
     params: {
@@ -13,6 +13,6 @@ type Args = {
     }
 }
 
-const Page = ({ params, searchParams }: Args) => RootPage({ config, params, searchParams })
+const Page = ({params, searchParams}: Args) => RootPage({config, params, searchParams})
 
 export default Page

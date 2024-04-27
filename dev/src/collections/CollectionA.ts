@@ -5,10 +5,10 @@ export const CollectionA: CollectionConfig = {
     slug: 'collectionA',
     labels: {
         singular: 'Document of Type A',
-        plural: 'Documents of Type A',
+        plural: 'Documents of Type A'
     },
     admin: {
-        useAsTitle: 'name',
+        useAsTitle: 'name'
     },
     fields: [
         {
@@ -17,5 +17,5 @@ export const CollectionA: CollectionConfig = {
         },
         relationAB.anchors.collectionA,
         relationAC.anchors.collectionA
-    ],
+    ]
 }
