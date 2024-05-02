@@ -44,12 +44,12 @@
     "prepublishOnly": "pnpm clean && pnpm turbo build"
   },
   "dependencies": {
-    "payload": "3.0.0-beta.19"
+    "payload": "3.0.0-beta.21"
   },
   "devDependencies": {
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.4.17",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.8",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.5"
   },

@@ -43,19 +43,19 @@
     "generate:types": "payload generate:types"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-beta.19",
-    "@payloadcms/next": "3.0.0-beta.19",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.19",
-    "@payloadcms/translations": "3.0.0-beta.19",
-    "@payloadcms/ui": "3.0.0-beta.19",
-    "next": "14.3.0-canary.29",
-    "payload": "3.0.0-beta.19",
+    "@payloadcms/db-mongodb": "3.0.0-beta.21",
+    "@payloadcms/next": "3.0.0-beta.21",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.21",
+    "@payloadcms/translations": "3.0.0-beta.21",
+    "@payloadcms/ui": "3.0.0-beta.21",
+    "next": "14.3.0-canary.36",
+    "payload": "3.0.0-beta.21",
     "payload-bidirectional-relationships-plugin": "file:..",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.8",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.4.5"

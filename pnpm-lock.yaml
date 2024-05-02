@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       payload:
-        specifier: 3.0.0-beta.19
-        version: 3.0.0-beta.19(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1)
+        specifier: 3.0.0-beta.21
+        version: 3.0.0-beta.21(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1)
     devDependencies:
       '@swc/cli':
         specifier: ^0.3.12
@@ -19,8 +19,8 @@ importers:
         specifier: ^1.4.17
         version: 1.4.17
       '@types/node':
-        specifier: ^20.12.7
-        version: 20.12.7
+        specifier: ^20.12.8
+        version: 20.12.8
       rimraf:
         specifier: ^5.0.5
         version: 5.0.5
@@ -62,8 +62,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@payloadcms/translations@3.0.0-beta.19':
-    resolution: {integrity: sha512-io9LDjOHd8cMzdv63V3kQkyERJZJSG0edlYbVgRBJKzKkNOwJhNcw32duWZenyyHJmvqEuHHaTuri/S6d7ABpQ==}
+  '@payloadcms/translations@3.0.0-beta.21':
+    resolution: {integrity: sha512-/nhOmmnjSS+IsRUH/b8pMCkjdhQjFI7EUHH2OVDySwM50F6KRa5O4dGC0KX/WbFFJJP34v4vYW1LxVKP+WYhEA==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -82,11 +82,11 @@ packages:
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
     engines: {node: '>=10'}
 
-  '@swc-node/core@1.13.0':
-    resolution: {integrity: sha512-lFPD4nmy4ifAOVMChFjwlpXN5KQXvegqeyuzz1KQz42q1lf+cL3Qux1/GteGuZjh8HC+Rj1RdNrHpE/MCfJSTw==}
+  '@swc-node/core@1.13.1':
+    resolution: {integrity: sha512-emB5l2nZsXjUEAuusqjYvWnQMLWZp6K039Mv8aq5SX1rsNM/N7DNhw1i4/DX7AyzNZ0tT+ASWyTvqEURldp5HA==}
     engines: {node: '>= 10'}
     peerDependencies:
-      '@swc/core': '>= 1.3'
+      '@swc/core': '>= 1.4.13'
       '@swc/types': '>= 0.1'
 
   '@swc-node/sourcemap-support@0.5.0':
@@ -209,8 +209,8 @@ packages:
   '@types/needle@3.3.0':
     resolution: {integrity: sha512-UFIuc1gdyzAqeVUYpSL+cliw2MmU/ZUhVZKE7Zo4wPbgc8hbljeKSnn6ls6iG8r5jpegPXLUIhJ+Wb2kLVs8cg==}
 
-  '@types/node@20.12.7':
-    resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
+  '@types/node@20.12.8':
+    resolution: {integrity: sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==}
 
   '@types/prettier@2.7.3':
     resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
@@ -233,8 +233,8 @@ packages:
       ajv:
         optional: true
 
-  ajv@8.12.0:
-    resolution: {integrity: sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==}
+  ajv@8.13.0:
+    resolution: {integrity: sha512-PRA911Blj99jR5RMeTunVbNXMF6Lp4vZXnk5GQjcnUWUTsrXtekg/pnmFFI2u/I36Y/2bITGS30GZCXei6uNkA==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -657,8 +657,8 @@ packages:
     resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
     engines: {node: '>=14'}
 
-  joi@17.13.0:
-    resolution: {integrity: sha512-9qcrTyoBmFZRNHeVP4edKqIUEgFzq7MHvTNSDuHSqkpOPtiBkgNgcmTSqmiw1kw9tdKaiddvIDv/eCJDxmqWCA==}
+  joi@17.13.1:
+    resolution: {integrity: sha512-vaBlIKCyo4FCUtCm7Eu4QZd/q02bWcxfUO6YSXAZOWF6gzcLBeba8kwotUdYJjDLW8Cz8RywsSOqiNJZW0mNvg==}
 
   joycon@3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
@@ -717,8 +717,8 @@ packages:
     resolution: {integrity: sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==}
     engines: {node: '>=8'}
 
-  lru-cache@10.2.1:
-    resolution: {integrity: sha512-tS24spDe/zXhWbNPErCHs/AGOzbKGHT+ybSBqmdLm8WZ1xXLWvH8Qn71QPAlqVhd0qUTWjy+Kl9JmISgDdEjsA==}
+  lru-cache@10.2.2:
+    resolution: {integrity: sha512-9hp3Vp2/hFQUiIwKo8XCeFVnrg8Pk3TYNPIR7tJADKi5YfcF7vEaK7avFHTlSy3kOKYaJQaalfEo6YuXdceBOQ==}
     engines: {node: 14 || >=16.14}
 
   lru-cache@4.1.5:
@@ -890,9 +890,9 @@ packages:
     resolution: {integrity: sha512-7xTavNy5RQXnsjANvVvMkEjvloOinkAjv/Z6Ildz9v2RinZ4SBKTWFOVRbaF8p0vpHnyjV/UwNDdKuUv6M5qcA==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  payload@3.0.0-beta.19:
-    resolution: {integrity: sha512-sZvLUa8gO5CEODn8FDM+CZ9RUbRJxM1LAa8Do/MSBZ+XSd242rCad4Zk1qd8CBFwTcBMCG7ISfOAt/uxgzjyaQ==}
-    engines: {node: '>=18.20.2'}
+  payload@3.0.0-beta.21:
+    resolution: {integrity: sha512-tNX2ZHo2YTJNaHjvrPwzByNwC8xdBkQFbooajKeuRN0JUaR1xdm935Cr0zLvhqZ+RdGVU0oWpk5ZelMsyoV97g==}
+    engines: {node: ^18.20.2 || >=20.6.0}
     hasBin: true
     peerDependencies:
       '@swc/core': ^1.4.13
@@ -1286,7 +1286,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@payloadcms/translations@3.0.0-beta.19': {}
+  '@payloadcms/translations@3.0.0-beta.21': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -1301,7 +1301,7 @@ snapshots:
 
   '@sindresorhus/is@4.6.0': {}
 
-  '@swc-node/core@1.13.0(@swc/core@1.4.17)(@swc/types@0.1.6)':
+  '@swc-node/core@1.13.1(@swc/core@1.4.17)(@swc/types@0.1.6)':
     dependencies:
       '@swc/core': 1.4.17
       '@swc/types': 0.1.6
@@ -1386,13 +1386,13 @@ snapshots:
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
       '@types/responselike': 1.0.3
 
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
 
   '@types/http-cache-semantics@4.0.4': {}
 
@@ -1400,7 +1400,7 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
 
   '@types/lodash@4.17.0': {}
 
@@ -1408,9 +1408,9 @@ snapshots:
 
   '@types/needle@3.3.0':
     dependencies:
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
 
-  '@types/node@20.12.7':
+  '@types/node@20.12.8':
     dependencies:
       undici-types: 5.26.5
 
@@ -1419,21 +1419,21 @@ snapshots:
   '@types/probe-image-size@7.2.4':
     dependencies:
       '@types/needle': 3.3.0
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
 
   abort-controller@3.0.0:
     dependencies:
       event-target-shim: 5.0.1
 
-  ajv-formats@2.1.1(ajv@8.12.0):
+  ajv-formats@2.1.1(ajv@8.13.0):
     optionalDependencies:
-      ajv: 8.12.0
+      ajv: 8.13.0
 
-  ajv@8.12.0:
+  ajv@8.13.0:
     dependencies:
       fast-deep-equal: 3.1.3
       json-schema-traverse: 1.0.0
@@ -1546,8 +1546,8 @@ snapshots:
 
   conf@10.2.0:
     dependencies:
-      ajv: 8.12.0
-      ajv-formats: 2.1.1(ajv@8.12.0)
+      ajv: 8.13.0
+      ajv-formats: 2.1.1(ajv@8.13.0)
       atomically: 1.7.0
       debounce-fn: 4.0.0
       dot-prop: 6.0.1
@@ -1887,7 +1887,7 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
-  joi@17.13.0:
+  joi@17.13.1:
     dependencies:
       '@hapi/hoek': 9.3.0
       '@hapi/topo': 5.1.0
@@ -1965,7 +1965,7 @@ snapshots:
 
   lowercase-keys@2.0.0: {}
 
-  lru-cache@10.2.1: {}
+  lru-cache@10.2.2: {}
 
   lru-cache@4.1.5:
     dependencies:
@@ -2108,16 +2108,16 @@ snapshots:
 
   path-scurry@1.10.2:
     dependencies:
-      lru-cache: 10.2.1
+      lru-cache: 10.2.2
       minipass: 7.0.4
 
-  payload@3.0.0-beta.19(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1):
+  payload@3.0.0-beta.21(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1):
     dependencies:
-      '@payloadcms/translations': 3.0.0-beta.19
-      '@swc-node/core': 1.13.0(@swc/core@1.4.17)(@swc/types@0.1.6)
+      '@payloadcms/translations': 3.0.0-beta.21
+      '@swc-node/core': 1.13.1(@swc/core@1.4.17)(@swc/types@0.1.6)
       '@swc-node/sourcemap-support': 0.5.0
       '@types/probe-image-size': 7.2.4
-      ajv: 8.12.0
+      ajv: 8.13.0
       bson-objectid: 2.0.4
       ci-info: 4.0.0
       conf: 10.2.0
@@ -2131,7 +2131,7 @@ snapshots:
       graphql: 16.8.1
       http-status: 1.6.2
       image-size: 1.1.1
-      joi: 17.13.0
+      joi: 17.13.1
       json-schema-to-typescript: 11.0.3
       jsonwebtoken: 9.0.1
       minimist: 1.2.8
