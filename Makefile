@@ -1,5 +1,5 @@
 build:
-	pnpm clean && pnpm build
+	pnpm prepublishOnly
 
 start:
 	docker compose up
