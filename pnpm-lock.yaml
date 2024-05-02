@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       payload:
-        specifier: 3.0.0-beta.21
-        version: 3.0.0-beta.21(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1)
+        specifier: 3.0.0-beta.22
+        version: 3.0.0-beta.22(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1)
     devDependencies:
       '@swc/cli':
         specifier: ^0.3.12
@@ -62,8 +62,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@payloadcms/translations@3.0.0-beta.21':
-    resolution: {integrity: sha512-/nhOmmnjSS+IsRUH/b8pMCkjdhQjFI7EUHH2OVDySwM50F6KRa5O4dGC0KX/WbFFJJP34v4vYW1LxVKP+WYhEA==}
+  '@payloadcms/translations@3.0.0-beta.22':
+    resolution: {integrity: sha512-BFQTS5WGRQNteIUuQ91kQqmUgL0rhNdO28iz8Kce2ZyE28GSpQnTm9w2JZCDgab6tqD2QjUgp8hbbPcvv+x9dw==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -890,8 +890,8 @@ packages:
     resolution: {integrity: sha512-7xTavNy5RQXnsjANvVvMkEjvloOinkAjv/Z6Ildz9v2RinZ4SBKTWFOVRbaF8p0vpHnyjV/UwNDdKuUv6M5qcA==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  payload@3.0.0-beta.21:
-    resolution: {integrity: sha512-tNX2ZHo2YTJNaHjvrPwzByNwC8xdBkQFbooajKeuRN0JUaR1xdm935Cr0zLvhqZ+RdGVU0oWpk5ZelMsyoV97g==}
+  payload@3.0.0-beta.22:
+    resolution: {integrity: sha512-Eh8vHjY5+Y/tZrMbWDA9iiTRRgRXJ+ll1Fu7O3K8br3Gtamymhi669ksSqXlSrgyNusQrmq1VADLIJKMwNMzVg==}
     engines: {node: ^18.20.2 || >=20.6.0}
     hasBin: true
     peerDependencies:
@@ -1286,7 +1286,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@payloadcms/translations@3.0.0-beta.21': {}
+  '@payloadcms/translations@3.0.0-beta.22': {}
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
@@ -2111,9 +2111,9 @@ snapshots:
       lru-cache: 10.2.2
       minipass: 7.0.4
 
-  payload@3.0.0-beta.21(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1):
+  payload@3.0.0-beta.22(@swc/core@1.4.17)(@swc/types@0.1.6)(graphql@16.8.1):
     dependencies:
-      '@payloadcms/translations': 3.0.0-beta.21
+      '@payloadcms/translations': 3.0.0-beta.22
       '@swc-node/core': 1.13.1(@swc/core@1.4.17)(@swc/types@0.1.6)
       '@swc-node/sourcemap-support': 0.5.0
       '@types/probe-image-size': 7.2.4
