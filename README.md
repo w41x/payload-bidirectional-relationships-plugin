@@ -6,7 +6,7 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 
 :boom: :boom: :boom: &nbsp; works :100: with PayloadCMS version :two: and :three: &nbsp; :boom: :boom: :boom:
 
-:bangbang: currently only works MongoDB :bangbang:
+:bangbang: currently only works with MongoDB :bangbang:
 
 > [!NOTE]
 >
