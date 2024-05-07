@@ -28,7 +28,7 @@ export const extractDirectedRelation = <G extends GeneratedTypes, Config extends
 }
 
 export const getId = <G extends GeneratedTypes, C extends keyof RelatableCollection<G>>(entry: RelationValue<G, C> | undefined) =>
-    typeof entry == 'string' ? entry : entry ? entry.id as string : undefined
+    typeof entry == 'string' ? entry : typeof entry == 'number' ? entry : entry ? entry.id as string | number : undefined
 
 export const getList = <G extends GeneratedTypes, Config extends RelationConfig<G>, Arrow extends RelationDirection>(config: Config, direction: Arrow, data: Partial<RelatableCollection<G>[DirectedRelation<G, Config, Arrow>['here']['collection']]>) =>
     data[extractDirectedRelation<G, Config, Arrow>(config, direction).here.list] as RelationList
@@ -52,10 +52,10 @@ export const couple = async <G extends GeneratedTypes, Config extends RelationCo
                 }
                 try {
                     const entriesThere = (await req.payload.findByID({
-                        collection: there.collection as keyof GeneratedTypes['collections'],
+                        collection: there.collection,
                         id: docThereId,
                         depth: 2
-                    }) as RelatableCollection<G>[typeof there.collection])[there.list] as RelationList
+                    }))[there.list] as RelationList
                     const matches = entriesThere.filter(entryThere => getId(entryThere[there.field]) == docHereId)
                     let updateNeeded = mode == 'decoupling' ? matches.length > 0 : (matches.length != 1 ? true : !deepComparison(relationMetaHere, getRelationMeta(matches[0], there.field)))
                     if (updateNeeded)
@@ -70,7 +70,7 @@ export const couple = async <G extends GeneratedTypes, Config extends RelationCo
                                     }),
                                     ...(mode == 'decoupling' ? [] : [newEntryThere])
                                 ]
-                            },
+                            } as any,
                             context: {
                                 ...context,
                                 updateCameFrom: docHereId

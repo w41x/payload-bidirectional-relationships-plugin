@@ -1,8 +1,12 @@
 # payload-bidirectional-relationships-plugin
 
+[![NPM](https://nodei.co/npm/payload-bidirectional-relationships-plugin.png)](https://npmjs.org/package/payload-bidirectional-relationships-plugin)
+
 plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional relationships
 
 :boom: :boom: :boom: &nbsp; works :100: with PayloadCMS version :two: and :three: &nbsp; :boom: :boom: :boom:
+
+:bangbang: currently only works MongoDB :bangbang:
 
 > [!NOTE]
 >
@@ -41,13 +45,14 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 ## Install
 
 ```shell
-pnpm add payload-bidirectional-relationships-plugin@0.4.4-v3
+pnpm add payload-bidirectional-relationships-plugin@0.4.5-v3
 ```
 
 > [!WARNING]
 >
 > Be aware to install only that version of this plugin which is compatible
-> with the PayloadCMS version you are using! So if you are using PayloadCMS v2, there should be a '-v2' at the end instead
+> with the PayloadCMS version you are using! So if you are using PayloadCMS v2, there should be a '-v2' at the end
+> instead
 > of a '-v3' and vice versa.
 > In the future, when this plugin becomes stable, there will be 2.x.x and 3.x.x versions.
 

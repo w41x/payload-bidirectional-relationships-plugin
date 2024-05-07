@@ -26,18 +26,18 @@ export interface Config {
  * via the `definition` "collectionA".
  */
 export interface CollectionA {
-  id: string;
+  id: number;
   name?: string | null;
   listA1?:
     | {
-        fieldA?: (string | null) | CollectionB;
+        fieldA?: (number | null) | CollectionB;
         relationMeta?: string | null;
         id?: string | null;
       }[]
     | null;
   listA2?:
     | {
-        fieldA?: (string | null) | CollectionC;
+        fieldA?: (number | null) | CollectionC;
         relationMeta?: string | null;
         id?: string | null;
       }[]
@@ -50,11 +50,11 @@ export interface CollectionA {
  * via the `definition` "collectionB".
  */
 export interface CollectionB {
-  id: string;
+  id: number;
   name?: string | null;
   listB?:
     | {
-        fieldB?: (string | null) | CollectionA;
+        fieldB?: (number | null) | CollectionA;
         relationMeta?: string | null;
         id?: string | null;
       }[]
@@ -67,11 +67,11 @@ export interface CollectionB {
  * via the `definition` "collectionC".
  */
 export interface CollectionC {
-  id: string;
+  id: number;
   name?: string | null;
   listC?:
     | {
-        fieldC?: (string | null) | CollectionA;
+        fieldC?: (number | null) | CollectionA;
         relationMeta?: string | null;
         id?: string | null;
       }[]
@@ -84,7 +84,7 @@ export interface CollectionC {
  * via the `definition` "users".
  */
 export interface User {
-  id: string;
+  id: number;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -101,10 +101,10 @@ export interface User {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: string;
+  id: number;
   user: {
     relationTo: 'users';
-    value: string | User;
+    value: number | User;
   };
   key?: string | null;
   value?:
@@ -124,7 +124,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: string;
+  id: number;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;

@@ -8,7 +8,7 @@ export type RelatableCollection<G extends GeneratedTypes> = Omit<G['collections'
 export type RelationList = Record<string, any>[]
 
 export type RelationValue<G extends GeneratedTypes, C extends keyof RelatableCollection<G>> =
-    (string | null)
+    (string | number | null)
     | (RelatableCollection<G>[C] & TypeWithID)
 
 export type Anchor<G extends GeneratedTypes> = {

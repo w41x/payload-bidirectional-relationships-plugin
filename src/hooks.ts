@@ -13,7 +13,7 @@ export const afterListChange = <G extends GeneratedTypes, Config extends Relatio
     if (value && originalDoc) {
         const {here: {field}} = extractDirectedRelation<G, Config, Arrow>(config, direction)
         const newIds = value.map(entry => getId(entry[field])).filter(id => id) as string[]
-        let deletedEntries = previousValue?.filter(oldEntry => !newIds.includes(getId(oldEntry[field]) ?? ''))
+        let deletedEntries = previousValue?.filter(oldEntry => !newIds.includes((getId(oldEntry[field]) ?? '') as string))
         if (context.deletionCameFrom)
             deletedEntries = deletedEntries?.filter(entry => getId(entry[field]) != context.deletionCameFrom)
         if (deletedEntries?.length)

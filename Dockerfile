@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.4.1
 
-FROM node:22.0.0-alpine3.19 AS payload
+FROM node:22.1.0-alpine3.19 AS payload
 LABEL name='api build'
 # enable corepack
 RUN corepack enable
@@ -33,3 +33,12 @@ ENV MONGO_INITDB_ROOT_USERNAME=root
 ENV MONGO_INITDB_ROOT_PASSWORD=secret
 # set internal port
 EXPOSE 27017
+
+FROM postgres:16.2-alpine3.19 as db-pg
+LABEL name='be-cms-db-pg build'
+# database config
+ENV POSTGRES_USER=root
+ENV POSTGRES_PASSWORD=secret
+ENV POSTGRES_DB=cms
+# set internal port
+EXPOSE 5432

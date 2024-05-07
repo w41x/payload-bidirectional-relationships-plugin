@@ -31,6 +31,17 @@ services:
         source: data
         target: /data/db
 
+  #db-pg development build
+  db-pg:
+    build:
+      target: db-pg
+    container_name: db-pg.dev
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: data-pg
+        target: /var/lib/postgresql/data
+
 networks:
   default:
     name: workspace-dev
@@ -38,3 +49,5 @@ networks:
 volumes:
   data:
     name: workspace-vol-data
+  data-pg:
+    name: workspace-vol-data-pg
