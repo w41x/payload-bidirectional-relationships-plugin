@@ -28,14 +28,24 @@ CMD pnpm run dev
 
 FROM mongo:7.0.9-jammy as db
 LABEL name='db build'
-# database config
+# database admin user
 ENV MONGO_INITDB_ROOT_USERNAME=root
 ENV MONGO_INITDB_ROOT_PASSWORD=secret
+# create mongodb directory
+WORKDIR /etc/mongodb
+# generate KeyFile
+RUN openssl rand -base64 756 > keyfile.txt
+RUN chmod 400 keyfile.txt
+RUN chown mongodb:mongodb keyfile.txt
+# copy config file
+COPY dev/mongo.conf.yaml config.yaml
+# copy init file
+COPY dev/mongo.init.js init.js
 # set internal port
 EXPOSE 27017
 
 FROM postgres:16.2-alpine3.19 as db-pg
-LABEL name='be-cms-db-pg build'
+LABEL name='db-pg build'
 # database config
 ENV POSTGRES_USER=root
 ENV POSTGRES_PASSWORD=secret

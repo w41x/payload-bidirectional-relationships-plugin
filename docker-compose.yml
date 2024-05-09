@@ -20,18 +20,31 @@ services:
         target: /home/node/workspace
 
 
-  #db development build
+  #db as MongoDB replica set development build
   db:
     build:
       target: db
     container_name: db.dev
+    command:
+      - --config
+      - /etc/mongodb/config.yaml
+    healthcheck:
+      test: mongosh -u root -p secret --quiet --file /etc/mongodb/init.js
+      interval: 5s
+      timeout: 30s
+      start_period: 0s
+      start_interval: 1s
+      retries: 30
     restart: unless-stopped
     volumes:
       - type: volume
-        source: data
+        source: db-data
         target: /data/db
+      - type: volume
+        source: db-config
+        target: /data/configdb
 
-  #db-pg development build
+  #db as Postgres development build
   db-pg:
     build:
       target: db-pg
@@ -47,7 +60,9 @@ networks:
     name: workspace-dev
 
 volumes:
-  data:
-    name: workspace-vol-data
+  db-data:
+    name: workspace-vol-db-data
+  db-config:
+    name: workspace-vol-db-config
   data-pg:
     name: workspace-vol-data-pg
