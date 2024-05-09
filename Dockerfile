@@ -33,7 +33,7 @@ ENV MONGO_INITDB_ROOT_USERNAME=root
 ENV MONGO_INITDB_ROOT_PASSWORD=secret
 # create mongodb directory
 WORKDIR /etc/mongodb
-# generate KeyFile
+# generate key file
 RUN openssl rand -base64 756 > keyfile.txt
 RUN chmod 400 keyfile.txt
 RUN chown mongodb:mongodb keyfile.txt
