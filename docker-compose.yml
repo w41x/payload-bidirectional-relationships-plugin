@@ -45,15 +45,15 @@ services:
         target: /data/configdb
 
   #db as Postgres development build
-  db-pg:
-    build:
-      target: db-pg
-    container_name: db-pg.dev
-    restart: unless-stopped
-    volumes:
-      - type: volume
-        source: data-pg
-        target: /var/lib/postgresql/data
+  #db-pg:
+  #  build:
+  #    target: db-pg
+  #  container_name: db-pg.dev
+  #  restart: unless-stopped
+  #  volumes:
+  #    - type: volume
+  #      source: data-pg
+  #      target: /var/lib/postgresql/data
 
 networks:
   default:
@@ -64,5 +64,5 @@ volumes:
     name: workspace-vol-db-data
   db-config:
     name: workspace-vol-db-config
-  data-pg:
-    name: workspace-vol-data-pg
+  #data-pg:
+  #  name: workspace-vol-data-pg

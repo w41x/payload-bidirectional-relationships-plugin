@@ -5,6 +5,7 @@ import {BiDirectionalRelationship, RelationConfig} from './types.js'
 import {relationList} from './field.js'
 import {extractDirectedRelation} from './helpers.js'
 import {afterDocumentDelete} from './hooks.js'
+import {translations} from './translations.js'
 
 export const biDirectionalRelationship = <G extends GeneratedTypes, Config extends RelationConfig<G>>(config: Config): BiDirectionalRelationship<G, Config> => {
     const {here, there} = extractDirectedRelation(config, 'A->B')
@@ -38,15 +39,11 @@ export const biDirectionalRelationships = <G extends GeneratedTypes>(relationshi
             translations: {
                 de: {
                     ...incomingConfig.i18n?.translations?.de ?? {},
-                    biDirectionalRelationships: {
-                        validationError: 'Es gibt bereits eine Beziehung zu diesem Element. Duplikate sind nicht erlaubt.'
-                    }
+                    ...translations.de
                 },
                 en: {
                     ...incomingConfig.i18n?.translations?.en ?? {},
-                    biDirectionalRelationships: {
-                        validationError: 'There is already a relation to this element. Duplicates are not allowed.'
-                    }
+                    ...translations.en
                 }
             }
         }
