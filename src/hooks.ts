@@ -2,13 +2,13 @@ import {CollectionAfterDeleteHook, FieldHook, GeneratedTypes, TypeWithID} from '
 import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection, RelationList} from './types.js'
 import {couple, entriesEqual, extractDirectedRelation, getId, getList} from './helpers.js'
 
-export const afterListChange = <G extends GeneratedTypes, Config extends RelationConfig<G>, Arrow extends RelationDirection>(config: Config, direction: Arrow): FieldHook<RelatableCollection<G>[DirectedRelation<G, Config, Arrow>['here']['collection']] & TypeWithID, RelationList | null> => async ({
-                                                                                                                                                                                                                                                                                                            originalDoc,
-                                                                                                                                                                                                                                                                                                            value,
-                                                                                                                                                                                                                                                                                                            previousValue,
-                                                                                                                                                                                                                                                                                                            req,
-                                                                                                                                                                                                                                                                                                            context
-                                                                                                                                                                                                                                                                                                        }) => {
+export const afterListChange = <G extends GeneratedTypes, Config extends RelationConfig<G>, Arrow extends RelationDirection>(config: Config, direction: Arrow): FieldHook<RelatableCollection<G>[DirectedRelation<G, Config, Arrow>['here']['collection']] & TypeWithID, RelationList | undefined> => async ({
+                                                                                                                                                                                                                                                                                                                 originalDoc,
+                                                                                                                                                                                                                                                                                                                 value,
+                                                                                                                                                                                                                                                                                                                 previousValue,
+                                                                                                                                                                                                                                                                                                                 req,
+                                                                                                                                                                                                                                                                                                                 context
+                                                                                                                                                                                                                                                                                                             }) => {
     if (value && originalDoc) {
         const {here: {field}} = extractDirectedRelation<G, Config, Arrow>(config, direction)
         const newIds = value.map(entry => getId(entry[field])).filter(id => id) as string[]
@@ -23,7 +23,7 @@ export const afterListChange = <G extends GeneratedTypes, Config extends Relatio
         if (changedEntries.length)
             await couple<G, Config, Arrow>(originalDoc, changedEntries, config, direction, req, 'recoupling', context)
     }
-    return null
+    return value
 }
 
 export const afterDocumentDelete = <G extends GeneratedTypes, Config extends RelationConfig<G>>(config: Config, direction: RelationDirection): CollectionAfterDeleteHook<RelatableCollection<G>[DirectedRelation<G, Config, typeof direction>['here']['collection']] & TypeWithID> => async ({
