@@ -1,9 +1,15 @@
-import {GeneratedTypes} from 'payload'
-import {ArrayField, CollectionAfterDeleteHook, Field, SingleRelationshipField, TypeWithID} from 'payload/types'
+import {
+    ArrayField,
+    CollectionAfterDeleteHook,
+    Field,
+    GeneratedTypes,
+    SingleRelationshipField,
+    TypeWithID
+} from 'payload'
 
 export type valueOf<Type> = Type[keyof Type]
 
-export type RelatableCollection<G extends GeneratedTypes> = Omit<G['collections'], 'payload-preferences' | 'payload-migrations'>
+export type RelatableCollection<G extends GeneratedTypes> = Omit<G['collectionsUntyped'], 'payload-preferences' | 'payload-migrations'>
 
 export type RelationList = Record<string, any>[]
 

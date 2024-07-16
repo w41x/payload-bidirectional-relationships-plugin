@@ -1,5 +1,4 @@
-import {GeneratedTypes} from 'payload'
-import {CollectionAfterDeleteHook, FieldHook, TypeWithID} from 'payload/types'
+import {CollectionAfterDeleteHook, FieldHook, GeneratedTypes, TypeWithID} from 'payload'
 import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection, RelationList} from './types.js'
 import {couple, entriesEqual, extractDirectedRelation, getId, getList} from './helpers.js'
 

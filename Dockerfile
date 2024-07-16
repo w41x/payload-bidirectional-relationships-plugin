@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.4.1
 
-FROM node:22.2.0-alpine3.19 AS payload
+FROM node:22.4.1-alpine3.20 AS payload
 LABEL name='api build'
 # enable corepack
 RUN corepack enable
@@ -26,7 +26,7 @@ EXPOSE 3000
 # start test environment
 CMD pnpm run dev
 
-FROM mongo:7.0.9-jammy as db
+FROM mongo:7.0.12-jammy as db
 LABEL name='db build'
 # database admin user
 ENV MONGO_INITDB_ROOT_USERNAME=root
@@ -44,7 +44,7 @@ COPY dev/mongo.init.js init.js
 # set internal port
 EXPOSE 27017
 
-FROM postgres:16.3-alpine3.19 as db-pg
+FROM postgres:16.3-alpine3.20 as db-pg
 LABEL name='db-pg build'
 # database config
 ENV POSTGRES_USER=root

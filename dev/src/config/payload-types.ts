@@ -7,6 +7,9 @@
  */
 
 export interface Config {
+  auth: {
+    users: UserAuthOperations;
+  };
   collections: {
     collectionA: CollectionA;
     collectionB: CollectionB;
@@ -21,23 +24,36 @@ export interface Config {
     collection: 'users';
   };
 }
+export interface UserAuthOperations {
+  forgotPassword: {
+    email: string;
+  };
+  login: {
+    password: string;
+    email: string;
+  };
+  registerFirstUser: {
+    email: string;
+    password: string;
+  };
+}
 /**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "collectionA".
  */
 export interface CollectionA {
-  id: number;
+  id: string;
   name?: string | null;
   listA1?:
     | {
-        fieldA?: (number | null) | CollectionB;
+        fieldA?: (string | null) | CollectionB;
         relationMeta?: string | null;
         id?: string | null;
       }[]
     | null;
   listA2?:
     | {
-        fieldA?: (number | null) | CollectionC;
+        fieldA?: (string | null) | CollectionC;
         relationMeta?: string | null;
         id?: string | null;
       }[]
@@ -50,11 +66,11 @@ export interface CollectionA {
  * via the `definition` "collectionB".
  */
 export interface CollectionB {
-  id: number;
+  id: string;
   name?: string | null;
   listB?:
     | {
-        fieldB?: (number | null) | CollectionA;
+        fieldB?: (string | null) | CollectionA;
         relationMeta?: string | null;
         id?: string | null;
       }[]
@@ -67,11 +83,11 @@ export interface CollectionB {
  * via the `definition` "collectionC".
  */
 export interface CollectionC {
-  id: number;
+  id: string;
   name?: string | null;
   listC?:
     | {
-        fieldC?: (number | null) | CollectionA;
+        fieldC?: (string | null) | CollectionA;
         relationMeta?: string | null;
         id?: string | null;
       }[]
@@ -84,7 +100,7 @@ export interface CollectionC {
  * via the `definition` "users".
  */
 export interface User {
-  id: number;
+  id: string;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -101,10 +117,10 @@ export interface User {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: number;
+  id: string;
   user: {
     relationTo: 'users';
-    value: number | User;
+    value: string | User;
   };
   key?: string | null;
   value?:
@@ -124,11 +140,18 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: number;
+  id: string;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "auth".
+ */
+export interface Auth {
+  [k: string]: unknown;
 }
 
 

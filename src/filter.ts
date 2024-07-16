@@ -1,5 +1,4 @@
-import {GeneratedTypes} from 'payload'
-import {FilterOptions} from 'payload/types'
+import {FilterOptions, GeneratedTypes} from 'payload'
 import {DirectedRelation, RelatableCollection, RelationConfig, RelationDirection} from './types.js'
 import {extractDirectedRelation, getId, getList} from './helpers.js'
 

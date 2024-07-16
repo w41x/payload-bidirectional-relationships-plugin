@@ -1,5 +1,4 @@
-import {GeneratedTypes} from 'payload'
-import {PayloadRequest, RequestContext} from 'payload/types'
+import {GeneratedTypes, PayloadRequest, RequestContext} from 'payload'
 import {
     DirectedRelation,
     RelatableCollection,

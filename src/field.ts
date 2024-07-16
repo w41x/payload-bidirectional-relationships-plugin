@@ -1,5 +1,4 @@
-import {GeneratedTypes} from 'payload'
-import {ArrayField} from 'payload/types'
+import {ArrayField, GeneratedTypes} from 'payload'
 import {RelationConfig, RelationDirection} from './types.js'
 import {extractDirectedRelation} from './helpers.js'
 import {filterFieldOptions} from './filter.js'

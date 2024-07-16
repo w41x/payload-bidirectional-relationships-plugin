@@ -1,5 +1,4 @@
-import {GeneratedTypes} from 'payload'
-import {Validate} from 'payload/types'
+import {GeneratedTypes, Validate} from 'payload'
 import {
     DirectedRelation,
     RelatableCollection,

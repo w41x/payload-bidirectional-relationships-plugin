@@ -1,4 +1,4 @@
-import {CollectionConfig} from 'payload/types'
+import {CollectionConfig} from 'payload'
 import {relationAC} from '@/relationships'
 
 export const CollectionC: CollectionConfig = {

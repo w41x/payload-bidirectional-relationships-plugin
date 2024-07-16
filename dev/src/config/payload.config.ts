@@ -1,4 +1,4 @@
-import {buildConfig} from 'payload/config'
+import {buildConfig} from 'payload'
 import path from 'path'
 import {fileURLToPath} from 'url'
 

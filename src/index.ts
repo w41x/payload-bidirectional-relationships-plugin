@@ -1,6 +1,4 @@
-import {GeneratedTypes} from 'payload'
-import {CollectionAfterDeleteHook} from 'payload/types'
-import {Config} from 'payload/config'
+import {CollectionAfterDeleteHook, Config, GeneratedTypes} from 'payload'
 import {BiDirectionalRelationship, RelationConfig} from './types.js'
 import {relationList} from './field.js'
 import {extractDirectedRelation} from './helpers.js'
