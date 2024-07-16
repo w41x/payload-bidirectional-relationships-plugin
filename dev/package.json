@@ -1,6 +1,6 @@
 {
   "name": "payload-bidirectional-relationships-plugin-dev",
-  "version": "0.4.10-v3",
+  "version": "0.4.9-v3",
   "description": "development environment for payload-bidirectional-relationships-plugin",
   "license": "MIT",
   "type": "module",
