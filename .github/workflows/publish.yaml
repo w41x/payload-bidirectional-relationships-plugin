@@ -18,7 +18,7 @@ jobs:
           run_install: false
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.4.1'
+          node-version: '22.5.1'
           cache: pnpm
           registry-url: 'https://registry.npmjs.org'
       - run: pnpm install --no-frozen-lockfile
