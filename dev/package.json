@@ -49,7 +49,7 @@
     "@payloadcms/richtext-lexical": "3.0.0-beta.70",
     "@payloadcms/translations": "3.0.0-beta.70",
     "@payloadcms/ui": "3.0.0-beta.70",
-    "next": "^15.0.0-canary.85",
+    "next": "15.0.0-canary.85",
     "payload": "3.0.0-beta.70",
     "payload-bidirectional-relationships-plugin": "file:..",
     "react": "rc",
