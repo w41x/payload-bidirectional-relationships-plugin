@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@payloadcms/translations':
-        specifier: 3.0.0-beta.69
-        version: 3.0.0-beta.69
+        specifier: 3.0.0-beta.70
+        version: 3.0.0-beta.70
       payload:
-        specifier: 3.0.0-beta.69
-        version: 3.0.0-beta.69(@swc/core@1.7.2)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+        specifier: 3.0.0-beta.70
+        version: 3.0.0-beta.70(@swc/core@1.7.2)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
     devDependencies:
       '@swc/cli':
         specifier: ^0.4.0
@@ -62,8 +62,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@payloadcms/translations@3.0.0-beta.69':
-    resolution: {integrity: sha512-SXKCrm0FbZfFn9rTVJmhehv4fWVXa4s+KmEs30SXgKJsQtDKzY+WH4AUIpKA76Hz1D/Soc/VpUrJpreoZrRB6w==}
+  '@payloadcms/translations@3.0.0-beta.70':
+    resolution: {integrity: sha512-Uti0HU6QSHLxEMDcK/Y7/yKzU9pGFxPgOhNfL5L4+wI9MdvkmufxOeSq2zPWDdYpjfyQr2MwgMW271t8T7zhAA==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -799,8 +799,8 @@ packages:
     resolution: {integrity: sha512-ypGJsmGtdXUOeM5u93TyeIEfEhM6s+ljAhrk5vAvSx8uyY/02OvrZnA0YNGUrPXfpJMgI1ODd3nwz8Npx4O4cg==}
     engines: {node: 20 || >=22}
 
-  payload@3.0.0-beta.69:
-    resolution: {integrity: sha512-6bJ9tf1DwIGkl6CXaMz9XSMbnONH9dc+Ng6FtQFJUa9Fn3x/u+u5p/sAoWwbMuussJsDypXUDIc+HXp60n6fEA==}
+  payload@3.0.0-beta.70:
+    resolution: {integrity: sha512-0ovhcHk/krM5QPCQ7VkeXRpF12tBWVn5cu2X4ilo6EEAtZ5xst683QzN7hqJcdlGtmz7Getik1oR6yhWJ79rMg==}
     engines: {node: ^18.20.2 || >=20.9.0}
     hasBin: true
     peerDependencies:
@@ -1180,7 +1180,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@payloadcms/translations@3.0.0-beta.69':
+  '@payloadcms/translations@3.0.0-beta.70':
     dependencies:
       date-fns: 3.3.1
 
@@ -1907,10 +1907,10 @@ snapshots:
       lru-cache: 11.0.0
       minipass: 7.1.2
 
-  payload@3.0.0-beta.69(@swc/core@1.7.2)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4):
+  payload@3.0.0-beta.70(@swc/core@1.7.2)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4):
     dependencies:
       '@next/env': 15.0.0-rc.0
-      '@payloadcms/translations': 3.0.0-beta.69
+      '@payloadcms/translations': 3.0.0-beta.70
       '@swc-node/core': 1.13.1(@swc/core@1.7.2)(@swc/types@0.1.12)
       '@swc-node/sourcemap-support': 0.5.0
       ajv: 8.14.0
