@@ -1,6 +1,6 @@
 {
   "name": "payload-bidirectional-relationships-plugin",
-  "version": "0.4.15-v3",
+  "version": "0.4.16-v3",
   "description": "plugin for Payload CMS, which enables bidirectional relationships",
   "type": "module",
   "license": "MIT",
@@ -40,12 +40,13 @@
     "build": "pnpm build:swc && pnpm build:types",
     "build:swc": "swc src -d dist --config-file .swcrc --strip-leading-paths",
     "build:types": "tsc --emitDeclarationOnly --outDir dist",
-    "clean": "rimraf {dist, tsconfig.tsbuildinfo}",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "reset": "rimraf dist node_modules pnpm-lock.yaml tsconfig.tsbuildinfo dev/.next dev/node_modules dev/pnpm-lock.yaml",
     "prepublishOnly": "pnpm clean && pnpm build"
   },
   "dependencies": {
-    "@payloadcms/translations": "3.0.0-beta.73",
-    "payload": "3.0.0-beta.73"
+    "@payloadcms/translations": "3.0.0-beta.74",
+    "payload": "3.0.0-beta.74"
   },
   "devDependencies": {
     "@swc/cli": "^0.4.0",
@@ -55,9 +56,9 @@
     "typescript": "^5.5.4"
   },
   "engines": {
-    "node": "^22.5.1"
+    "node": "^22.6.0"
   },
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@9.7.0",
   "exports": {
     ".": {
       "import": "./dist/index.js",
