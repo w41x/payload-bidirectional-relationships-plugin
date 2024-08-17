@@ -40,7 +40,8 @@
   ],
   "scripts": {
     "dev": "next dev",
-    "gen:types": "payload generate:types"
+    "gen:types": "payload generate:types",
+    "gen:imap": "payload generate:importmap"
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "3.0.0-beta.84",
