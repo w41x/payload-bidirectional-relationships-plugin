@@ -3,9 +3,11 @@
 import React, {PropsWithChildren} from 'react'
 import configPromise from '@payload-config'
 import {RootLayout} from '@payloadcms/next/layouts'
+import {importMap} from './admin/importMap'
 
 import '@payloadcms/next/css'
 
-const Layout = ({children}: PropsWithChildren) => <RootLayout config={configPromise}>{children}</RootLayout>
+const Layout = ({children}: PropsWithChildren) =>
+    <RootLayout importMap={importMap} config={configPromise}>{children}</RootLayout>
 
 export default Layout
