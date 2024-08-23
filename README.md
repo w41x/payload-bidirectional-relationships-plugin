@@ -45,7 +45,7 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 ## Install
 
 ```shell
-pnpm add payload-bidirectional-relationships-plugin@0.4.17-v3
+pnpm add payload-bidirectional-relationships-plugin@0.4.19-v3
 ```
 
 > [!WARNING]
