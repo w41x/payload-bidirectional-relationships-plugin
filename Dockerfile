@@ -26,7 +26,7 @@ EXPOSE 3000
 # start test environment
 CMD pnpm run dev
 
-FROM mongo:8.0.0-rc16-jammy as db
+FROM mongo:8.0.0-rc18-noble as db
 LABEL name='db build'
 # database admin user
 ENV MONGO_INITDB_ROOT_USERNAME=root
@@ -43,12 +43,3 @@ COPY dev/mongo.conf.yaml config.yaml
 COPY dev/mongo.init.js init.js
 # set internal port
 EXPOSE 27017
-
-FROM postgres:16.4-alpine3.20 as db-pg
-LABEL name='db-pg build'
-# database config
-ENV POSTGRES_USER=root
-ENV POSTGRES_PASSWORD=secret
-ENV POSTGRES_DB=cms
-# set internal port
-EXPOSE 5432

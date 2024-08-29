@@ -3,7 +3,6 @@ import path from 'path'
 import {fileURLToPath} from 'url'
 
 import {mongooseAdapter} from '@payloadcms/db-mongodb'
-//import {postgresAdapter} from '@payloadcms/db-postgres'
 import {lexicalEditor} from '@payloadcms/richtext-lexical'
 
 import {collections} from '@/collections'
@@ -27,11 +26,6 @@ export default buildConfig({
     },
     collections,
     db: mongooseAdapter({url: 'mongodb://root:secret@db:27017'}),
-    /*db: postgresAdapter({
-        pool: {
-            connectionString: 'postgresql://root:secret@db-pg:5432/cms'
-        }
-    }),*/
     editor: lexicalEditor(),
     i18n: {
         supportedLanguages: {de, en}

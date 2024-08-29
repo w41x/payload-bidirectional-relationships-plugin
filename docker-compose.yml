@@ -33,7 +33,6 @@ services:
       interval: 5s
       timeout: 30s
       start_period: 0s
-      start_interval: 1s
       retries: 30
     restart: unless-stopped
     volumes:
@@ -44,17 +43,6 @@ services:
         source: db-config
         target: /data/configdb
 
-  #db as Postgres development build
-  #db-pg:
-  #  build:
-  #    target: db-pg
-  #  container_name: db-pg.dev
-  #  restart: unless-stopped
-  #  volumes:
-  #    - type: volume
-  #      source: data-pg
-  #      target: /var/lib/postgresql/data
-
 networks:
   default:
     name: workspace-dev
@@ -64,5 +52,3 @@ volumes:
     name: workspace-vol-db-data
   db-config:
     name: workspace-vol-db-config
-  #data-pg:
-  #  name: workspace-vol-data-pg
