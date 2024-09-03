@@ -1,6 +1,6 @@
 {
   "name": "payload-bidirectional-relationships-plugin-dev",
-  "version": "0.4.21-v3",
+  "version": "0.4.22-v3",
   "description": "development environment for payload-bidirectional-relationships-plugin",
   "type": "module",
   "license": "MIT",
@@ -44,23 +44,23 @@
     "gen:imap": "payload generate:importmap"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-beta.97",
-    "@payloadcms/db-postgres": "3.0.0-beta.97",
-    "@payloadcms/next": "3.0.0-beta.97",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.97",
-    "@payloadcms/translations": "3.0.0-beta.97",
-    "@payloadcms/ui": "3.0.0-beta.97",
-    "next": "15.0.0-canary.135",
-    "payload": "3.0.0-beta.97",
+    "@payloadcms/db-mongodb": "3.0.0-beta.98",
+    "@payloadcms/db-postgres": "3.0.0-beta.98",
+    "@payloadcms/next": "3.0.0-beta.98",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.98",
+    "@payloadcms/translations": "3.0.0-beta.98",
+    "@payloadcms/ui": "3.0.0-beta.98",
+    "next": "15.0.0-canary.139",
+    "payload": "3.0.0-beta.98",
     "payload-bidirectional-relationships-plugin": "file:..",
-    "react": "19.0.0-rc-e56f4ae3-20240830",
-    "react-dom": "19.0.0-rc-e56f4ae3-20240830"
+    "react": "19.0.0-rc-4f604941-20240830",
+    "react-dom": "19.0.0-rc-4f604941-20240830"
   },
   "devDependencies": {
-    "@types/node": "^22.5.1",
+    "@types/node": "^22.5.2",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "typescript": "5.7.0-dev.20240830"
+    "typescript": "5.7.0-dev.20240903"
   },
   "pnpm": {
     "overrides": {
@@ -69,7 +69,7 @@
     }
   },
   "engines": {
-    "node": "^22.7.0"
+    "node": "^22.8.0"
   },
   "packageManager": "pnpm@9.9.0",
   "private": true
