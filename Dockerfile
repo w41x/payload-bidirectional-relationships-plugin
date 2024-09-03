@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.4.1
 
-FROM node:22.7.0-alpine3.20 AS payload
+FROM node:22.8.0-alpine3.20 AS payload
 LABEL name='api build'
 # enable corepack
 RUN corepack enable
