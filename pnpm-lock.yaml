@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@payloadcms/translations':
-        specifier: 3.0.0-beta.98
-        version: 3.0.0-beta.98
+        specifier: 3.0.0-beta.100
+        version: 3.0.0-beta.100
       payload:
-        specifier: 3.0.0-beta.98
-        version: 3.0.0-beta.98(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240903)
+        specifier: 3.0.0-beta.100
+        version: 3.0.0-beta.100(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240904)
     devDependencies:
       '@swc/cli':
         specifier: ^0.4.0
@@ -22,14 +22,14 @@ importers:
         specifier: ^1.7.23
         version: 1.7.23
       '@types/node':
-        specifier: ^22.5.2
-        version: 22.5.2
+        specifier: ^22.5.4
+        version: 22.5.4
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
       typescript:
-        specifier: 5.7.0-dev.20240903
-        version: 5.7.0-dev.20240903
+        specifier: 5.7.0-dev.20240904
+        version: 5.7.0-dev.20240904
 
 packages:
 
@@ -219,8 +219,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@payloadcms/translations@3.0.0-beta.98':
-    resolution: {integrity: sha512-wc+O8wnPuamDGR3hxKEG7AlrLKjLI8UicIqeyX4T1ZrUcJaX6aUkXhxcyvk/3GFK0A9SLMo/NbriUQn1aizb+A==}
+  '@payloadcms/translations@3.0.0-beta.100':
+    resolution: {integrity: sha512-wJMazGXKx1tivtg1BR5lRKin1RQOJRfsNrmrDRyLjuQFXnHKDOu0W9QajRv8LHbCrVqk+xE/2X1UEjFvrCQA1w==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -338,8 +338,8 @@ packages:
   '@types/keyv@3.1.4':
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
 
-  '@types/node@22.5.2':
-    resolution: {integrity: sha512-acJsPTEqYqulZS/Yp/S3GgeE6GZ0qYODUR8aVr/DkhHQ8l9nd4j5x1/ZJy9/gHrRlFMqkO6i0I3E27Alu4jjPg==}
+  '@types/node@22.5.4':
+    resolution: {integrity: sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==}
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -736,8 +736,8 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lru-cache@11.0.0:
-    resolution: {integrity: sha512-Qv32eSV1RSCfhY3fpPE2GNZ8jgM9X7rdAfemLWqTUxwiyIC4jJ6Sy0fZ8H+oLWevO6i4/bizg7c8d8i6bxrzbA==}
+  lru-cache@11.0.1:
+    resolution: {integrity: sha512-CgeuL5uom6j/ZVrg7G/+1IXqRY8JXX4Hghfy5YE0EhoYQWvndP1kufu58cmZLNIDKnRhZrXfdS9urVWx98AipQ==}
     engines: {node: 20 || >=22}
 
   lru-cache@4.1.5:
@@ -868,8 +868,8 @@ packages:
     resolution: {integrity: sha512-ypGJsmGtdXUOeM5u93TyeIEfEhM6s+ljAhrk5vAvSx8uyY/02OvrZnA0YNGUrPXfpJMgI1ODd3nwz8Npx4O4cg==}
     engines: {node: 20 || >=22}
 
-  payload@3.0.0-beta.98:
-    resolution: {integrity: sha512-0fFYwKDIv19n473LooqncKsTxRZ6euhEaI2q+Z0bc2n0tmCdVemIoCycK0gmKT6T0DOCov5v0MjrwRTJlEPgDw==}
+  payload@3.0.0-beta.100:
+    resolution: {integrity: sha512-DRi6JgfR6xjenF7w9JzpR8o3nq3gWpO3CCf6dge1w/6rZy7KI7ikxifUUNWV09y9DctiqB1VPN/1qNXqzc5jKQ==}
     engines: {node: ^18.20.2 || >=20.9.0}
     hasBin: true
     peerDependencies:
@@ -1144,8 +1144,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  typescript@5.7.0-dev.20240903:
-    resolution: {integrity: sha512-XTUc5uVwBbLlT0v3FqTx9sDN1MLQnT5mwSC3JefCrcKT6Zv+rPcQE7HLKM9IsrNiM1tiaQvamJTgVH0S+UMH2A==}
+  typescript@5.7.0-dev.20240904:
+    resolution: {integrity: sha512-iGi6VWFGOuxPvDfwfK1/8C172NWzC5gtC4G2dxqCQehrr86WTfFkc9aWucynaxZdwQNMqG1Iu83bmXD7CNHCmg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -1324,7 +1324,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@payloadcms/translations@3.0.0-beta.98':
+  '@payloadcms/translations@3.0.0-beta.100':
     dependencies:
       date-fns: 3.3.1
 
@@ -1406,13 +1406,13 @@ snapshots:
 
   '@types/busboy@1.5.4':
     dependencies:
-      '@types/node': 22.5.2
+      '@types/node': 22.5.4
 
   '@types/cacheable-request@6.0.3':
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 22.5.2
+      '@types/node': 22.5.4
       '@types/responselike': 1.0.3
 
   '@types/http-cache-semantics@4.0.4': {}
@@ -1421,15 +1421,15 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 22.5.2
+      '@types/node': 22.5.4
 
-  '@types/node@22.5.2':
+  '@types/node@22.5.4':
     dependencies:
       undici-types: 6.19.8
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 22.5.2
+      '@types/node': 22.5.4
 
   abort-controller@3.0.0:
     dependencies:
@@ -1855,7 +1855,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lru-cache@11.0.0: {}
+  lru-cache@11.0.1: {}
 
   lru-cache@4.1.5:
     dependencies:
@@ -1958,14 +1958,14 @@ snapshots:
 
   path-scurry@2.0.0:
     dependencies:
-      lru-cache: 11.0.0
+      lru-cache: 11.0.1
       minipass: 7.1.2
 
-  payload@3.0.0-beta.98(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240903):
+  payload@3.0.0-beta.100(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240904):
     dependencies:
       '@monaco-editor/react': 4.6.0(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@next/env': 15.0.0-rc.0
-      '@payloadcms/translations': 3.0.0-beta.98
+      '@payloadcms/translations': 3.0.0-beta.100
       '@types/busboy': 1.5.4
       ajv: 8.14.0
       bson-objectid: 2.0.4
@@ -1987,7 +1987,7 @@ snapshots:
       pluralize: 8.0.0
       sanitize-filename: 1.6.3
       scmp: 2.1.0
-      ts-essentials: 7.0.3(typescript@5.7.0-dev.20240903)
+      ts-essentials: 7.0.3(typescript@5.7.0-dev.20240904)
       tsx: 4.17.0
       uuid: 10.0.0
     transitivePeerDependencies:
@@ -2242,9 +2242,9 @@ snapshots:
     dependencies:
       utf8-byte-length: 1.0.5
 
-  ts-essentials@7.0.3(typescript@5.7.0-dev.20240903):
+  ts-essentials@7.0.3(typescript@5.7.0-dev.20240904):
     dependencies:
-      typescript: 5.7.0-dev.20240903
+      typescript: 5.7.0-dev.20240904
 
   tsx@4.17.0:
     dependencies:
@@ -2253,7 +2253,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  typescript@5.7.0-dev.20240903: {}
+  typescript@5.7.0-dev.20240904: {}
 
   undici-types@6.19.8: {}
 
