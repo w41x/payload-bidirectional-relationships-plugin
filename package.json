@@ -45,8 +45,8 @@
     "prepublishOnly": "pnpm clean && pnpm build"
   },
   "dependencies": {
-    "@payloadcms/translations": "3.0.0-beta.105",
-    "payload": "3.0.0-beta.105"
+    "@payloadcms/translations": "3.0.0-beta.106",
+    "payload": "3.0.0-beta.106"
   },
   "devDependencies": {
     "@swc/cli": "^0.4.0",

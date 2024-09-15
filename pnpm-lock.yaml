@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@payloadcms/translations':
-        specifier: 3.0.0-beta.105
-        version: 3.0.0-beta.105
+        specifier: 3.0.0-beta.106
+        version: 3.0.0-beta.106
       payload:
-        specifier: 3.0.0-beta.105
-        version: 3.0.0-beta.105(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240915)
+        specifier: 3.0.0-beta.106
+        version: 3.0.0-beta.106(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240915)
     devDependencies:
       '@swc/cli':
         specifier: ^0.4.0
@@ -219,8 +219,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@payloadcms/translations@3.0.0-beta.105':
-    resolution: {integrity: sha512-SUbjFZWJRHuYuCDuQTzA2t53NCbe0aVlg4NCYAgWjsijhGuz5J5UkDpmzUBOrK40jO7PWIJfyK8G91qqWrh1iQ==}
+  '@payloadcms/translations@3.0.0-beta.106':
+    resolution: {integrity: sha512-WHqeHXyz8WR7XgUxf8yzz6JwE4985boduCwm/SW7FrWo71Y34Q6MG62tU/pVJwudDnr/FP4Gv++8XdAr7YUeDg==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -892,8 +892,8 @@ packages:
     resolution: {integrity: sha512-ypGJsmGtdXUOeM5u93TyeIEfEhM6s+ljAhrk5vAvSx8uyY/02OvrZnA0YNGUrPXfpJMgI1ODd3nwz8Npx4O4cg==}
     engines: {node: 20 || >=22}
 
-  payload@3.0.0-beta.105:
-    resolution: {integrity: sha512-G2IqBMgwWZWNjQ+6/kI2qF8VVDrAYRe1byBR4SA8Gv+Mj8JxR8F2lwRZWnvyWaArXC/J8z58bFJ+u7mS8KYi4g==}
+  payload@3.0.0-beta.106:
+    resolution: {integrity: sha512-LYBzGJWTKEcJNJojQvSEO2BvkAL8MPKG2M8VyYQ1bH1xd74wSc7Nx0L17cavqmbAFqu7zeZrDCSJ1OdOzFFpSg==}
     engines: {node: ^18.20.2 || >=20.9.0}
     hasBin: true
     peerDependencies:
@@ -1344,7 +1344,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@payloadcms/translations@3.0.0-beta.105':
+  '@payloadcms/translations@3.0.0-beta.106':
     dependencies:
       date-fns: 3.3.1
 
@@ -2003,11 +2003,11 @@ snapshots:
       lru-cache: 11.0.1
       minipass: 7.1.2
 
-  payload@3.0.0-beta.105(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240915):
+  payload@3.0.0-beta.106(graphql@16.9.0)(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20240915):
     dependencies:
       '@monaco-editor/react': 4.6.0(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@next/env': 15.0.0-rc.0
-      '@payloadcms/translations': 3.0.0-beta.105
+      '@payloadcms/translations': 3.0.0-beta.106
       '@types/busboy': 1.5.4
       ajv: 8.17.1
       bson-objectid: 2.0.4
