@@ -1,6 +1,6 @@
 {
   "name": "payload-bidirectional-relationships-plugin",
-  "version": "0.4.29-v3",
+  "version": "0.4.30-v3",
   "description": "plugin for Payload CMS, which enables bidirectional relationships",
   "type": "module",
   "license": "MIT",
@@ -45,20 +45,20 @@
     "prepublishOnly": "pnpm clean && pnpm build"
   },
   "dependencies": {
-    "@payloadcms/translations": "3.0.0-beta.111",
-    "payload": "3.0.0-beta.111"
+    "@payloadcms/translations": "3.0.0-beta.113",
+    "payload": "3.0.0-beta.113"
   },
   "devDependencies": {
     "@swc/cli": "^0.4.1-nightly.20240914",
-    "@swc/core": "^1.7.30-nightly-20241002.1",
-    "@types/node": "^22.7.4",
+    "@swc/core": "^1.7.35-nightly-20241010.1",
+    "@types/node": "^22.7.5",
     "rimraf": "^6.0.1",
-    "typescript": "5.7.0-dev.20241005"
+    "typescript": "5.7.0-dev.20241012"
   },
   "engines": {
     "node": "^22.9.0"
   },
-  "packageManager": "pnpm@9.12.0",
+  "packageManager": "pnpm@9.12.1",
   "exports": {
     ".": {
       "import": "./dist/index.js",
