@@ -14,13 +14,13 @@ jobs:
       - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: 9.12.1
+          version: 9.12.2
           run_install: false
       - uses: actions/setup-node@v4
         with:
-          node-version: '22.9.0'
+          node-version: 23.0.0
           cache: pnpm
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: https://registry.npmjs.org
       - run: pnpm install --no-frozen-lockfile
       - run: pnpm publish --access public --no-git-checks
         env:

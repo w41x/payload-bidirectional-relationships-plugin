@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@payloadcms/translations':
-        specifier: 3.0.0-beta.114
-        version: 3.0.0-beta.114
+        specifier: 3.0.0-beta.115
+        version: 3.0.0-beta.115
       payload:
-        specifier: 3.0.0-beta.114
-        version: 3.0.0-beta.114(graphql@16.9.0)(monaco-editor@0.52.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20241015)
+        specifier: 3.0.0-beta.115
+        version: 3.0.0-beta.115(graphql@16.9.0)(monaco-editor@0.52.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20241017)
     devDependencies:
       '@swc/cli':
         specifier: ^0.4.1-nightly.20240914
@@ -22,14 +22,14 @@ importers:
         specifier: ^1.7.36-nightly-20241015.1
         version: 1.7.36
       '@types/node':
-        specifier: ^22.7.5
-        version: 22.7.5
+        specifier: ^22.7.6
+        version: 22.7.6
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
       typescript:
-        specifier: 5.7.0-dev.20241015
-        version: 5.7.0-dev.20241015
+        specifier: 5.7.0-dev.20241017
+        version: 5.7.0-dev.20241017
 
 packages:
 
@@ -319,8 +319,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@payloadcms/translations@3.0.0-beta.114':
-    resolution: {integrity: sha512-JtJFJru8WQLfox55mUh9YYbVHSUaehZAJiH7UV02cc3Apl9KSEmwI5ucaQ0zQvVzVaNVJa4EuCmTHnYmvf/0OQ==}
+  '@payloadcms/translations@3.0.0-beta.115':
+    resolution: {integrity: sha512-GFAMSStcb/RN8Crx5ee//3Mxuqdt3XCT1EQ4p9MxU9yOiD2hCYJOeR9gH4arX7YI1rm3mFXD/sXqH2njaXXVZg==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -438,8 +438,8 @@ packages:
   '@types/keyv@3.1.4':
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
 
-  '@types/node@22.7.5':
-    resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
+  '@types/node@22.7.6':
+    resolution: {integrity: sha512-/d7Rnj0/ExXDMcioS78/kf1lMzYk4BZV8MZGTBKzTGZ6/406ukkbYlIsZmMPhcR5KlkunDHQLrtAVmSq7r+mSw==}
 
   '@types/responselike@1.0.3':
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -965,8 +965,8 @@ packages:
     resolution: {integrity: sha512-ypGJsmGtdXUOeM5u93TyeIEfEhM6s+ljAhrk5vAvSx8uyY/02OvrZnA0YNGUrPXfpJMgI1ODd3nwz8Npx4O4cg==}
     engines: {node: 20 || >=22}
 
-  payload@3.0.0-beta.114:
-    resolution: {integrity: sha512-Y9F4Q7FUiP47hr8Yghh3PJmnmAgBE8k8NkjuwbLBik2kAZkxUxdL5a1EG7B7eXldBZaEuNFaWAMxiN7KxgqLCw==}
+  payload@3.0.0-beta.115:
+    resolution: {integrity: sha512-fqMLU9UOuxeFxL6By7g2JNljfnJb+BHmUGC3rXRI1OsWAe6AkyUUTKVoyCEQSuab7g3pbi8kqNxK7aBPVtz5yw==}
     engines: {node: ^18.20.2 || >=20.9.0}
     hasBin: true
     peerDependencies:
@@ -1248,8 +1248,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  typescript@5.7.0-dev.20241015:
-    resolution: {integrity: sha512-nBl/xbQGBZrOmLVFbywn5KVStnsVqGsdjU7jVU+wMAp+bpF0iSrF2ts9pUVFyHdP702zINLxfhlnPr66yXB/ew==}
+  typescript@5.7.0-dev.20241017:
+    resolution: {integrity: sha512-ZxR14EdfbJK3JjGJ0dm6SjmHbOkJ86QM7k2ARlQzRyzNJV23E2bkdLW24fjVk5UyLyuTtIH9OMgpP++Q0G/Glg==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -1489,7 +1489,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@payloadcms/translations@3.0.0-beta.114':
+  '@payloadcms/translations@3.0.0-beta.115':
     dependencies:
       date-fns: 3.3.1
 
@@ -1571,13 +1571,13 @@ snapshots:
 
   '@types/busboy@1.5.4':
     dependencies:
-      '@types/node': 22.7.5
+      '@types/node': 22.7.6
 
   '@types/cacheable-request@6.0.3':
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 22.7.5
+      '@types/node': 22.7.6
       '@types/responselike': 1.0.3
 
   '@types/http-cache-semantics@4.0.4': {}
@@ -1586,15 +1586,15 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 22.7.5
+      '@types/node': 22.7.6
 
-  '@types/node@22.7.5':
+  '@types/node@22.7.6':
     dependencies:
       undici-types: 6.19.8
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 22.7.5
+      '@types/node': 22.7.6
 
   abort-controller@3.0.0:
     dependencies:
@@ -2120,11 +2120,11 @@ snapshots:
       lru-cache: 11.0.1
       minipass: 7.1.2
 
-  payload@3.0.0-beta.114(graphql@16.9.0)(monaco-editor@0.52.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20241015):
+  payload@3.0.0-beta.115(graphql@16.9.0)(monaco-editor@0.52.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.0-dev.20241017):
     dependencies:
       '@monaco-editor/react': 4.6.0(monaco-editor@0.52.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@next/env': 15.0.0-rc.1
-      '@payloadcms/translations': 3.0.0-beta.114
+      '@payloadcms/translations': 3.0.0-beta.115
       '@types/busboy': 1.5.4
       ajv: 8.17.1
       bson-objectid: 2.0.4
@@ -2145,7 +2145,7 @@ snapshots:
       pluralize: 8.0.0
       sanitize-filename: 1.6.3
       scmp: 2.1.0
-      ts-essentials: 10.0.2(typescript@5.7.0-dev.20241015)
+      ts-essentials: 10.0.2(typescript@5.7.0-dev.20241017)
       tsx: 4.19.1
       uuid: 10.0.0
     transitivePeerDependencies:
@@ -2408,9 +2408,9 @@ snapshots:
     dependencies:
       utf8-byte-length: 1.0.5
 
-  ts-essentials@10.0.2(typescript@5.7.0-dev.20241015):
+  ts-essentials@10.0.2(typescript@5.7.0-dev.20241017):
     optionalDependencies:
-      typescript: 5.7.0-dev.20241015
+      typescript: 5.7.0-dev.20241017
 
   tsx@4.19.1:
     dependencies:
@@ -2419,7 +2419,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  typescript@5.7.0-dev.20241015: {}
+  typescript@5.7.0-dev.20241017: {}
 
   uint8array-extras@1.4.0: {}
 
