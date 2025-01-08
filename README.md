@@ -6,18 +6,7 @@ plugin for [Payload CMS](https://payloadcms.com), which enables bidirectional re
 
 :bangbang: currently only works with MongoDB :bangbang:
 
-> [!CAUTION]
->
-> With the new [Join Field](https://payloadcms.com/docs/fields/join) and the ability to
-> [hide](https://payloadcms.com/docs/admin/collections) certain collections from the
-> Admin Dashboard (`{..., admin:{hidden:true},...}`) there is no longer a need for
-> this plugin. I will no longer maintain it.
->
-> If you want me to continue, you can open
-> up a discussion.
->
-> Thank you, everybody, for the stars!
-> This was my first open source project. :heart:
+
 
 > [!NOTE]
 >
